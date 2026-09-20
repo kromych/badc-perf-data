@@ -2,6 +2,21 @@
  "schema": 2,
  "runs": [
   {
+   "sha": "c49a8449baaf8d193cd455bc78f416fcee372172",
+   "branch": "debt/laundry397",
+   "runner": "ubuntu-latest",
+   "taken": "2026-08-15T15:12:45Z",
+   "machine": {
+    "system": "Linux",
+    "arch": "x86_64",
+    "runner": "ubuntu-latest",
+    "image": "ubuntu-24.04"
+   },
+   "path": "runs/c4/9a/c49a8449baaf8d193cd455bc78f416fcee372172/ubuntu-latest.json",
+   "run_id": "31891231871",
+   "source": "github-actions-job-log"
+  },
+  {
    "sha": "7442cabbe324e87ee1a1e7180c75c75788d2d252",
    "branch": "debt/laundry397",
    "runner": "ubuntu-latest",
