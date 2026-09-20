@@ -2,6 +2,21 @@
  "schema": 2,
  "runs": [
   {
+   "sha": "cc69dd803fc4b3fe26c6331bcc222a559ed2b66b",
+   "branch": "compile/distro-kernel-packages",
+   "runner": "ubuntu-latest",
+   "taken": "2026-08-29T21:21:46Z",
+   "machine": {
+    "system": "Linux",
+    "arch": "x86_64",
+    "runner": "ubuntu-latest",
+    "image": "ubuntu-24.04"
+   },
+   "path": "runs/cc/69/cc69dd803fc4b3fe26c6331bcc222a559ed2b66b/ubuntu-latest.json",
+   "run_id": "33275117079",
+   "source": "github-actions-job-log"
+  },
+  {
    "sha": "291e96f395a39d4dff8e81f60a0b73afc6fdfdb4",
    "branch": "compile/distro-kernel-packages",
    "runner": "ubuntu-24.04-arm",
