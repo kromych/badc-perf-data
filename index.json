@@ -17,6 +17,21 @@
    "source": "github-actions-job-log"
   },
   {
+   "sha": "69150386b01e513818943eb3f513f6f577644e42",
+   "branch": "fix/release-audit-1",
+   "runner": "ubuntu-24.04-arm",
+   "taken": "2026-07-02T05:53:36Z",
+   "machine": {
+    "system": "Linux",
+    "arch": "aarch64",
+    "runner": "ubuntu-24.04-arm",
+    "image": "ubuntu-24.04-arm"
+   },
+   "path": "runs/69/15/69150386b01e513818943eb3f513f6f577644e42/ubuntu-24.04-arm.json",
+   "run_id": "28568282365",
+   "source": "github-actions-job-log"
+  },
+  {
    "sha": "476ae914f683c3d2e68d92755b7cddf7e98ac25b",
    "branch": "master",
    "runner": "ubuntu-latest",
