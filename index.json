@@ -17,6 +17,21 @@
    "source": "github-actions-job-log"
   },
   {
+   "sha": "3e083153ccd28dbdd8c2d256508eb5a3c6f7847c",
+   "branch": "codegen/refactor_regalloc",
+   "runner": "ubuntu-24.04-arm",
+   "taken": "2026-06-25T15:32:24Z",
+   "machine": {
+    "system": "Linux",
+    "arch": "aarch64",
+    "runner": "ubuntu-24.04-arm",
+    "image": "ubuntu-24.04-arm"
+   },
+   "path": "runs/3e/08/3e083153ccd28dbdd8c2d256508eb5a3c6f7847c/ubuntu-24.04-arm.json",
+   "run_id": "28180923618",
+   "source": "github-actions-job-log"
+  },
+  {
    "sha": "12023cae39530d7506b07a80517e4d17e9f12101",
    "branch": "codegen/refactor_regalloc",
    "runner": "ubuntu-latest",
