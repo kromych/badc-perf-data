@@ -2,6 +2,21 @@
  "schema": 2,
  "runs": [
   {
+   "sha": "2779495df52a14e9866f454ecac1b6174bc66ae0",
+   "branch": "codegen/refactor_regalloc",
+   "runner": "ubuntu-latest",
+   "taken": "2026-06-22T07:05:42Z",
+   "machine": {
+    "system": "Linux",
+    "arch": "x86_64",
+    "runner": "ubuntu-latest",
+    "image": "ubuntu-24.04"
+   },
+   "path": "runs/27/79/2779495df52a14e9866f454ecac1b6174bc66ae0/ubuntu-latest.json",
+   "run_id": "27935105686",
+   "source": "github-actions-job-log"
+  },
+  {
    "sha": "786f9b2bf4aa35e8e2f4125ab4f15638ad8f0f02",
    "branch": "codegen/refactor_regalloc",
    "runner": "ubuntu-latest",
