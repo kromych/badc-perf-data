@@ -2,6 +2,21 @@
  "schema": 2,
  "runs": [
   {
+   "sha": "95fb484b4975bb87d73570c73857e23c145e5694",
+   "branch": "refactor/fe_263",
+   "runner": "ubuntu-latest",
+   "taken": "2026-06-28T02:47:41Z",
+   "machine": {
+    "system": "Linux",
+    "arch": "x86_64",
+    "runner": "ubuntu-latest",
+    "image": "ubuntu-24.04"
+   },
+   "path": "runs/95/fb/95fb484b4975bb87d73570c73857e23c145e5694/ubuntu-latest.json",
+   "run_id": "28309046222",
+   "source": "github-actions-job-log"
+  },
+  {
    "sha": "5301febd3ce1e0d58072e328996c10b9f838c1e9",
    "branch": "refactor/fe_263",
    "runner": "ubuntu-latest",
