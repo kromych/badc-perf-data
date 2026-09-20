@@ -4,6 +4,21 @@
   {
    "sha": "6ea2f9f02474e52028e9e525165ed90331e42021",
    "branch": "compile/qemu",
+   "runner": "ubuntu-24.04-arm",
+   "taken": "2026-07-15T04:28:39Z",
+   "machine": {
+    "system": "Linux",
+    "arch": "aarch64",
+    "runner": "ubuntu-24.04-arm",
+    "image": "ubuntu-24.04-arm"
+   },
+   "path": "runs/6e/a2/6ea2f9f02474e52028e9e525165ed90331e42021/ubuntu-24.04-arm.json",
+   "run_id": "29388475553",
+   "source": "github-actions-job-log"
+  },
+  {
+   "sha": "6ea2f9f02474e52028e9e525165ed90331e42021",
+   "branch": "compile/qemu",
    "runner": "ubuntu-latest",
    "taken": "2026-07-15T04:28:03Z",
    "machine": {
