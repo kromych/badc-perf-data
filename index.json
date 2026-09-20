@@ -17,6 +17,21 @@
    "source": "github-actions-job-log"
   },
   {
+   "sha": "77b19bd85c6b4325d872de355fdbcd5e0f564914",
+   "branch": "master",
+   "runner": "ubuntu-24.04-arm",
+   "taken": "2026-07-17T13:28:15Z",
+   "machine": {
+    "system": "Linux",
+    "arch": "aarch64",
+    "runner": "ubuntu-24.04-arm",
+    "image": "ubuntu-24.04-arm"
+   },
+   "path": "runs/77/b1/77b19bd85c6b4325d872de355fdbcd5e0f564914/ubuntu-24.04-arm.json",
+   "run_id": "29583410579",
+   "source": "github-actions-job-log"
+  },
+  {
    "sha": "af2593dc706279462f73e49abe55f5870cfaba22",
    "branch": "compile/qemu",
    "runner": "ubuntu-latest",
