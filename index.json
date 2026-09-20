@@ -4,6 +4,21 @@
   {
    "sha": "f478c1ca6d84374c8cbcb4b9c2d439267a0c0d6b",
    "branch": "compile/raylib",
+   "runner": "ubuntu-24.04-arm",
+   "taken": "2026-06-30T05:40:45Z",
+   "machine": {
+    "system": "Linux",
+    "arch": "aarch64",
+    "runner": "ubuntu-24.04-arm",
+    "image": "ubuntu-24.04-arm"
+   },
+   "path": "runs/f4/78/f478c1ca6d84374c8cbcb4b9c2d439267a0c0d6b/ubuntu-24.04-arm.json",
+   "run_id": "28422621959",
+   "source": "github-actions-job-log"
+  },
+  {
+   "sha": "f478c1ca6d84374c8cbcb4b9c2d439267a0c0d6b",
+   "branch": "compile/raylib",
    "runner": "ubuntu-latest",
    "taken": "2026-06-30T05:40:05Z",
    "machine": {
