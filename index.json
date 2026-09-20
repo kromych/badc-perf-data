@@ -17,6 +17,21 @@
    "source": "github-actions-job-log"
   },
   {
+   "sha": "a8e6ee1211fbe95885555162bff512fd9935fa1c",
+   "branch": "perf/campaign-2",
+   "runner": "ubuntu-24.04-arm",
+   "taken": "2026-07-06T20:25:50Z",
+   "machine": {
+    "system": "Linux",
+    "arch": "aarch64",
+    "runner": "ubuntu-24.04-arm",
+    "image": "ubuntu-24.04-arm"
+   },
+   "path": "runs/a8/e6/a8e6ee1211fbe95885555162bff512fd9935fa1c/ubuntu-24.04-arm.json",
+   "run_id": "28820422788",
+   "source": "github-actions-job-log"
+  },
+  {
    "sha": "e81dae547438692f31503a60d065fc747d0a607a",
    "branch": "perf/campaign-2",
    "runner": "ubuntu-latest",
