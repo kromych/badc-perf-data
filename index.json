@@ -4,6 +4,21 @@
   {
    "sha": "d0cb376ef96c8eff84abbf24c6617ceb71ef4b2c",
    "branch": "fix/201-244",
+   "runner": "ubuntu-24.04-arm",
+   "taken": "2026-07-01T20:27:42Z",
+   "machine": {
+    "system": "Linux",
+    "arch": "aarch64",
+    "runner": "ubuntu-24.04-arm",
+    "image": "ubuntu-24.04-arm"
+   },
+   "path": "runs/d0/cb/d0cb376ef96c8eff84abbf24c6617ceb71ef4b2c/ubuntu-24.04-arm.json",
+   "run_id": "28545097131",
+   "source": "github-actions-job-log"
+  },
+  {
+   "sha": "d0cb376ef96c8eff84abbf24c6617ceb71ef4b2c",
+   "branch": "fix/201-244",
    "runner": "ubuntu-latest",
    "taken": "2026-07-01T20:27:03Z",
    "machine": {
