@@ -4,6 +4,21 @@
   {
    "sha": "86c76831cf388e6b02e920f1bb0d836812f2e520",
    "branch": "feat/linux-kernel",
+   "runner": "ubuntu-latest",
+   "taken": "2026-07-27T04:51:05Z",
+   "machine": {
+    "system": "Linux",
+    "arch": "x86_64",
+    "runner": "ubuntu-latest",
+    "image": "ubuntu-24.04"
+   },
+   "path": "runs/86/c7/86c76831cf388e6b02e920f1bb0d836812f2e520/ubuntu-latest.json",
+   "run_id": "30237693788",
+   "source": "github-actions-job-log"
+  },
+  {
+   "sha": "86c76831cf388e6b02e920f1bb0d836812f2e520",
+   "branch": "feat/linux-kernel",
    "runner": "ubuntu-24.04-arm",
    "taken": "2026-07-27T04:50:13Z",
    "machine": {
