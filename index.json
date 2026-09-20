@@ -17,6 +17,21 @@
    "source": "github-actions-job-log"
   },
   {
+   "sha": "0470e89ae42db0d7256efa19b0049feee9d4ff17",
+   "branch": "debt/laundry397",
+   "runner": "ubuntu-24.04-arm",
+   "taken": "2026-08-16T08:57:40Z",
+   "machine": {
+    "system": "Linux",
+    "arch": "aarch64",
+    "runner": "ubuntu-24.04-arm",
+    "image": "ubuntu-24.04-arm"
+   },
+   "path": "runs/04/70/0470e89ae42db0d7256efa19b0049feee9d4ff17/ubuntu-24.04-arm.json",
+   "run_id": "31937071036",
+   "source": "github-actions-job-log"
+  },
+  {
    "sha": "fc4c0e4a4e887a197488e973ead469e9e5c3a806",
    "branch": "debt/laundry397",
    "runner": "ubuntu-latest",
