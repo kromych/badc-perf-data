@@ -17,6 +17,21 @@
    "source": "github-actions-job-log"
   },
   {
+   "sha": "3f748a22120fe13431392d0bdda9e73c6f68e5b7",
+   "branch": "feat/linux-kernel",
+   "runner": "ubuntu-latest",
+   "taken": "2026-07-25T23:26:58Z",
+   "machine": {
+    "system": "Linux",
+    "arch": "x86_64",
+    "runner": "ubuntu-latest",
+    "image": "ubuntu-24.04"
+   },
+   "path": "runs/3f/74/3f748a22120fe13431392d0bdda9e73c6f68e5b7/ubuntu-latest.json",
+   "run_id": "30179156116",
+   "source": "github-actions-job-log"
+  },
+  {
    "sha": "3b4c9f22c27609b9cdae1d7884947315bf3dde66",
    "branch": "feat/linux-kernel",
    "runner": "ubuntu-latest",
