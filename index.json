@@ -2,6 +2,21 @@
  "schema": 2,
  "runs": [
   {
+   "sha": "5023d56642d9d8b53a677df5997ac6bb56f6e149",
+   "branch": "feat/linux-kernel",
+   "runner": "ubuntu-24.04-arm",
+   "taken": "2026-08-01T22:42:08Z",
+   "machine": {
+    "system": "Linux",
+    "arch": "aarch64",
+    "runner": "ubuntu-24.04-arm",
+    "image": "ubuntu-24.04-arm"
+   },
+   "path": "runs/50/23/5023d56642d9d8b53a677df5997ac6bb56f6e149/ubuntu-24.04-arm.json",
+   "run_id": "30721339888",
+   "source": "github-actions-job-log"
+  },
+  {
    "sha": "8eb3bf432b5695fdf0f8f84fd50db821c407fc51",
    "branch": "feat/linux-kernel",
    "runner": "ubuntu-latest",
