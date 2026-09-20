@@ -1,0 +1,20 @@
+{
+ "schema": 2,
+ "runs": [
+  {
+   "sha": "897d477a703585f2abacb883cb9d6a3d40d57888",
+   "branch": "release/0.1.0",
+   "runner": "ubuntu-latest",
+   "taken": "2026-06-22T01:52:18Z",
+   "machine": {
+    "system": "Linux",
+    "arch": "x86_64",
+    "runner": "ubuntu-latest",
+    "image": "ubuntu-24.04"
+   },
+   "path": "runs/89/7d/897d477a703585f2abacb883cb9d6a3d40d57888/ubuntu-latest.json",
+   "run_id": "27924434116",
+   "source": "github-actions-job-log"
+  }
+ ]
+}
