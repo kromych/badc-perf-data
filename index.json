@@ -17,6 +17,21 @@
    "source": "github-actions-job-log"
   },
   {
+   "sha": "909f15c13e84930f6545f6d98af984f00183f04c",
+   "branch": "compile/raylib",
+   "runner": "ubuntu-24.04-arm",
+   "taken": "2026-06-30T15:51:10Z",
+   "machine": {
+    "system": "Linux",
+    "arch": "aarch64",
+    "runner": "ubuntu-24.04-arm",
+    "image": "ubuntu-24.04-arm"
+   },
+   "path": "runs/90/9f/909f15c13e84930f6545f6d98af984f00183f04c/ubuntu-24.04-arm.json",
+   "run_id": "28456761796",
+   "source": "github-actions-job-log"
+  },
+  {
    "sha": "f478c1ca6d84374c8cbcb4b9c2d439267a0c0d6b",
    "branch": "compile/raylib",
    "runner": "ubuntu-24.04-arm",
