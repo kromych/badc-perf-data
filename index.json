@@ -2,6 +2,21 @@
  "schema": 2,
  "runs": [
   {
+   "sha": "3ff29739c2753ff9513ff2e2e511e933cfa06558",
+   "branch": "compile/raylib",
+   "runner": "ubuntu-latest",
+   "taken": "2026-06-30T05:21:57Z",
+   "machine": {
+    "system": "Linux",
+    "arch": "x86_64",
+    "runner": "ubuntu-latest",
+    "image": "ubuntu-24.04"
+   },
+   "path": "runs/3f/f2/3ff29739c2753ff9513ff2e2e511e933cfa06558/ubuntu-latest.json",
+   "run_id": "28421895607",
+   "source": "github-actions-job-log"
+  },
+  {
    "sha": "530cd8ac8f0d8e783bc6acdef5f1c3da951b3e68",
    "branch": "compile/raylib",
    "runner": "ubuntu-latest",
