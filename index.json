@@ -17,6 +17,21 @@
    "source": "github-actions-job-log"
   },
   {
+   "sha": "88c9202d208841a51fee2dd56f5c503c60daae48",
+   "branch": "compile/edk2",
+   "runner": "ubuntu-24.04-arm",
+   "taken": "2026-07-09T02:45:18Z",
+   "machine": {
+    "system": "Linux",
+    "arch": "aarch64",
+    "runner": "ubuntu-24.04-arm",
+    "image": "ubuntu-24.04-arm"
+   },
+   "path": "runs/88/c9/88c9202d208841a51fee2dd56f5c503c60daae48/ubuntu-24.04-arm.json",
+   "run_id": "28990039674",
+   "source": "github-actions-job-log"
+  },
+  {
    "sha": "e8abd68f6f144d24495275be5b8e8894c570af6b",
    "branch": "compile/edk2",
    "runner": "ubuntu-latest",
