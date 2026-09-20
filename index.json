@@ -17,6 +17,21 @@
    "source": "github-actions-job-log"
   },
   {
+   "sha": "075ab771251ee282b4a1515bb5dc86c5da44fbb4",
+   "branch": "refactor/fe_be_199",
+   "runner": "ubuntu-24.04-arm",
+   "taken": "2026-06-27T06:32:31Z",
+   "machine": {
+    "system": "Linux",
+    "arch": "aarch64",
+    "runner": "ubuntu-24.04-arm",
+    "image": "ubuntu-24.04-arm"
+   },
+   "path": "runs/07/5a/075ab771251ee282b4a1515bb5dc86c5da44fbb4/ubuntu-24.04-arm.json",
+   "run_id": "28281054602",
+   "source": "github-actions-job-log"
+  },
+  {
    "sha": "edb150a39339b644dd944a35c78cb1b20b7676ba",
    "branch": "refactor/fe_be_199",
    "runner": "ubuntu-latest",
