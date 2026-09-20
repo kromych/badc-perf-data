@@ -4,6 +4,21 @@
   {
    "sha": "6855056d185d079cc697b3ec4c1074dc3435e559",
    "branch": "codegen/refactor_regalloc",
+   "runner": "ubuntu-24.04-arm",
+   "taken": "2026-06-26T02:17:14Z",
+   "machine": {
+    "system": "Linux",
+    "arch": "aarch64",
+    "runner": "ubuntu-24.04-arm",
+    "image": "ubuntu-24.04-arm"
+   },
+   "path": "runs/68/55/6855056d185d079cc697b3ec4c1074dc3435e559/ubuntu-24.04-arm.json",
+   "run_id": "28212586015",
+   "source": "github-actions-job-log"
+  },
+  {
+   "sha": "6855056d185d079cc697b3ec4c1074dc3435e559",
+   "branch": "codegen/refactor_regalloc",
    "runner": "ubuntu-latest",
    "taken": "2026-06-26T02:16:33Z",
    "machine": {
