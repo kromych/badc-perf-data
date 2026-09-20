@@ -2,6 +2,21 @@
  "schema": 2,
  "runs": [
   {
+   "sha": "2952725f0bc3ff54f82ec28320d61955f9b3806b",
+   "branch": "compile/qemu",
+   "runner": "ubuntu-latest",
+   "taken": "2026-07-13T15:48:28Z",
+   "machine": {
+    "system": "Linux",
+    "arch": "x86_64",
+    "runner": "ubuntu-latest",
+    "image": "ubuntu-24.04"
+   },
+   "path": "runs/29/52/2952725f0bc3ff54f82ec28320d61955f9b3806b/ubuntu-latest.json",
+   "run_id": "29262934506",
+   "source": "github-actions-job-log"
+  },
+  {
    "sha": "4edf81b3c58d8621edcc18aa647c3c926e3d7994",
    "branch": "compile/qemu",
    "runner": "ubuntu-latest",
