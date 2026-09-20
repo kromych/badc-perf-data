@@ -2,6 +2,21 @@
  "schema": 2,
  "runs": [
   {
+   "sha": "53a1e60fc1eace4f8afbe39647a830d0e6dc3095",
+   "branch": "perf/campaign-2",
+   "runner": "ubuntu-latest",
+   "taken": "2026-07-06T22:28:35Z",
+   "machine": {
+    "system": "Linux",
+    "arch": "x86_64",
+    "runner": "ubuntu-latest",
+    "image": "ubuntu-24.04"
+   },
+   "path": "runs/53/a1/53a1e60fc1eace4f8afbe39647a830d0e6dc3095/ubuntu-latest.json",
+   "run_id": "28827129512",
+   "source": "github-actions-job-log"
+  },
+  {
    "sha": "a8e6ee1211fbe95885555162bff512fd9935fa1c",
    "branch": "perf/campaign-2",
    "runner": "ubuntu-latest",
