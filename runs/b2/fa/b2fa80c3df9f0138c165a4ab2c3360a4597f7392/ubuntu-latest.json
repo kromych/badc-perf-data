@@ -1,0 +1,341 @@
+{
+ "schema": 2,
+ "taken": "2026-07-19T12:10:44Z",
+ "commit": {
+  "sha": "b2fa80c3df9f0138c165a4ab2c3360a4597f7392",
+  "branch": "feat/asm"
+ },
+ "machine": {
+  "system": "Linux",
+  "arch": "x86_64",
+  "runner": "ubuntu-latest",
+  "image": "ubuntu-24.04"
+ },
+ "runs_per_fixture": 3,
+ "compilers": [
+  {
+   "name": "badc"
+  },
+  {
+   "name": "badc -O"
+  },
+  {
+   "name": "tcc"
+  },
+  {
+   "name": "clang -O0"
+  },
+  {
+   "name": "clang -O2"
+  }
+ ],
+ "fixtures": [
+  "fib.c",
+  "qsort.c",
+  "sieve.c",
+  "crypto.c",
+  "compress.c",
+  "stb.c",
+  "sqlite.c",
+  "sqlite_bench.c",
+  "quickjs_bench.c"
+ ],
+ "results": [
+  {
+   "fixture": "fib.c",
+   "compiler": "badc",
+   "run_ms": 411.3,
+   "binary_bytes": 9824
+  },
+  {
+   "fixture": "fib.c",
+   "compiler": "badc -O",
+   "run_ms": 124.8,
+   "binary_bytes": 9824
+  },
+  {
+   "fixture": "fib.c",
+   "compiler": "tcc",
+   "run_ms": 225.1,
+   "binary_bytes": 4695
+  },
+  {
+   "fixture": "fib.c",
+   "compiler": "clang -O0",
+   "run_ms": 287.9,
+   "binary_bytes": 16096
+  },
+  {
+   "fixture": "fib.c",
+   "compiler": "clang -O2",
+   "run_ms": 99.5,
+   "binary_bytes": 16144
+  },
+  {
+   "fixture": "qsort.c",
+   "compiler": "badc",
+   "run_ms": 344.1,
+   "binary_bytes": 9880
+  },
+  {
+   "fixture": "qsort.c",
+   "compiler": "badc -O",
+   "run_ms": 194.4,
+   "binary_bytes": 9880
+  },
+  {
+   "fixture": "qsort.c",
+   "compiler": "tcc",
+   "run_ms": 260.1,
+   "binary_bytes": 5439
+  },
+  {
+   "fixture": "qsort.c",
+   "compiler": "clang -O0",
+   "run_ms": 283.5,
+   "binary_bytes": 16192
+  },
+  {
+   "fixture": "qsort.c",
+   "compiler": "clang -O2",
+   "run_ms": 156.3,
+   "binary_bytes": 16192
+  },
+  {
+   "fixture": "sieve.c",
+   "compiler": "badc",
+   "run_ms": 372.5,
+   "binary_bytes": 9792
+  },
+  {
+   "fixture": "sieve.c",
+   "compiler": "badc -O",
+   "run_ms": 141.5,
+   "binary_bytes": 9792
+  },
+  {
+   "fixture": "sieve.c",
+   "compiler": "tcc",
+   "run_ms": 209.0,
+   "binary_bytes": 4791
+  },
+  {
+   "fixture": "sieve.c",
+   "compiler": "clang -O0",
+   "run_ms": 311.7,
+   "binary_bytes": 16104
+  },
+  {
+   "fixture": "sieve.c",
+   "compiler": "clang -O2",
+   "run_ms": 80.7,
+   "binary_bytes": 16152
+  },
+  {
+   "fixture": "crypto.c",
+   "compiler": "badc",
+   "run_ms": 4005.3,
+   "binary_bytes": 32912
+  },
+  {
+   "fixture": "crypto.c",
+   "compiler": "badc -O",
+   "run_ms": 444.4,
+   "binary_bytes": 36528
+  },
+  {
+   "fixture": "crypto.c",
+   "compiler": "tcc",
+   "run_ms": 3694.4,
+   "binary_bytes": 29295
+  },
+  {
+   "fixture": "crypto.c",
+   "compiler": "clang -O0",
+   "run_ms": 2570.7,
+   "binary_bytes": 39584
+  },
+  {
+   "fixture": "crypto.c",
+   "compiler": "clang -O2",
+   "run_ms": 184.3,
+   "binary_bytes": 55144
+  },
+  {
+   "fixture": "compress.c",
+   "compiler": "badc",
+   "run_ms": 959.6,
+   "binary_bytes": 106904
+  },
+  {
+   "fixture": "compress.c",
+   "compiler": "badc -O",
+   "run_ms": 472.9,
+   "binary_bytes": 90360
+  },
+  {
+   "fixture": "compress.c",
+   "compiler": "tcc",
+   "run_ms": 1062.8,
+   "binary_bytes": 66927
+  },
+  {
+   "fixture": "compress.c",
+   "compiler": "clang -O0",
+   "run_ms": 1073.5,
+   "binary_bytes": 69336
+  },
+  {
+   "fixture": "compress.c",
+   "compiler": "clang -O2",
+   "run_ms": 286.1,
+   "binary_bytes": 52392
+  },
+  {
+   "fixture": "stb.c",
+   "compiler": "badc",
+   "run_ms": 274.6,
+   "binary_bytes": 14360
+  },
+  {
+   "fixture": "stb.c",
+   "compiler": "badc -O",
+   "run_ms": 123.6,
+   "binary_bytes": 18328
+  },
+  {
+   "fixture": "stb.c",
+   "compiler": "tcc",
+   "run_ms": 265.9,
+   "binary_bytes": 11583
+  },
+  {
+   "fixture": "stb.c",
+   "compiler": "clang -O0",
+   "run_ms": 244.5,
+   "binary_bytes": 21992
+  },
+  {
+   "fixture": "stb.c",
+   "compiler": "clang -O2",
+   "run_ms": 55.7,
+   "binary_bytes": 16552
+  },
+  {
+   "fixture": "sqlite.c",
+   "compiler": "badc",
+   "run_ms": 53.1,
+   "binary_bytes": 1538296
+  },
+  {
+   "fixture": "sqlite.c",
+   "compiler": "badc -O",
+   "run_ms": 18.8,
+   "binary_bytes": 1580088
+  },
+  {
+   "fixture": "sqlite.c",
+   "compiler": "tcc",
+   "run_ms": 33.3,
+   "binary_bytes": 1388191
+  },
+  {
+   "fixture": "sqlite.c",
+   "compiler": "clang -O0",
+   "run_ms": 33.3,
+   "binary_bytes": 1308568
+  },
+  {
+   "fixture": "sqlite.c",
+   "compiler": "clang -O2",
+   "run_ms": 9.9,
+   "binary_bytes": 1254824
+  },
+  {
+   "fixture": "sqlite_bench.c",
+   "compiler": "badc",
+   "run_ms": 1501.8,
+   "binary_bytes": 1542520
+  },
+  {
+   "fixture": "sqlite_bench.c",
+   "compiler": "badc -O",
+   "run_ms": 650.6,
+   "binary_bytes": 1584320
+  },
+  {
+   "fixture": "sqlite_bench.c",
+   "compiler": "tcc",
+   "run_ms": 1117.7,
+   "binary_bytes": 1390673
+  },
+  {
+   "fixture": "sqlite_bench.c",
+   "compiler": "clang -O0",
+   "run_ms": 1175.8,
+   "binary_bytes": 1312800
+  },
+  {
+   "fixture": "sqlite_bench.c",
+   "compiler": "clang -O2",
+   "run_ms": 379.6,
+   "binary_bytes": 1254912
+  },
+  {
+   "fixture": "quickjs_bench.c",
+   "compiler": "badc",
+   "run_ms": 438.1,
+   "binary_bytes": 1566184
+  },
+  {
+   "fixture": "quickjs_bench.c",
+   "compiler": "badc -O",
+   "run_ms": 351.9,
+   "binary_bytes": 1430904
+  },
+  {
+   "fixture": "quickjs_bench.c",
+   "compiler": "clang -O0",
+   "run_ms": 429.8,
+   "binary_bytes": 1366408
+  },
+  {
+   "fixture": "quickjs_bench.c",
+   "compiler": "clang -O2",
+   "run_ms": 111.7,
+   "binary_bytes": 1170888
+  }
+ ],
+ "benches": [
+  {
+   "suite": "cpython",
+   "name": "microbench",
+   "compiler": "badc",
+   "run_ms": 2087.299
+  },
+  {
+   "suite": "cpython",
+   "name": "microbench",
+   "compiler": "badc -O",
+   "run_ms": 252.727
+  },
+  {
+   "suite": "cpython",
+   "name": "microbench",
+   "compiler": "clang -O0",
+   "run_ms": 1349.014
+  },
+  {
+   "suite": "cpython",
+   "name": "microbench",
+   "compiler": "clang -O2",
+   "run_ms": 56.204
+  }
+ ],
+ "provenance": {
+  "source": "github-actions-job-log",
+  "run_id": "29686173968",
+  "job_id": "88191248258",
+  "url": "https://github.com/kromych/badc/actions/runs/29686173968/job/88191248258"
+ }
+}
