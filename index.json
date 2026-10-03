@@ -2,6 +2,23 @@
  "schema": 2,
  "runs": [
   {
+   "sha": "14a0b917857346b8a0e53f8eeab01baeb6546880",
+   "branch": "debt/release-0.4.6-01",
+   "runner": "ubuntu-latest",
+   "taken": "2026-10-03T16:14:23Z",
+   "machine": {
+    "system": "Linux",
+    "release": "6.17.0-1022-azure",
+    "arch": "x86_64",
+    "cpu": "AMD EPYC 9V45 96-Core Processor",
+    "image": "ubuntu-24.04",
+    "runner": "ubuntu-latest"
+   },
+   "path": "runs/14/a0/14a0b917857346b8a0e53f8eeab01baeb6546880/ubuntu-latest.json",
+   "run_id": "37134918730",
+   "source": "measured"
+  },
+  {
    "sha": "99d25ec9a733f332f4b7bda6ce2c4eaf53ea5534",
    "branch": "master",
    "runner": "ubuntu-latest",
