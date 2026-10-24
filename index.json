@@ -4,6 +4,23 @@
   {
    "sha": "9fb0083cc40219cfec5f4697b3b4fb3816d2f8c9",
    "branch": "debt/release-0.4.8",
+   "runner": "ubuntu-24.04-arm",
+   "taken": "2026-10-24T21:42:12Z",
+   "machine": {
+    "system": "Linux",
+    "release": "6.17.0-1022-azure",
+    "arch": "aarch64",
+    "cpu": "Neoverse-N2",
+    "image": "ubuntu-24.04-arm",
+    "runner": "ubuntu-24.04-arm"
+   },
+   "path": "runs/9f/b0/9fb0083cc40219cfec5f4697b3b4fb3816d2f8c9/ubuntu-24.04-arm.json",
+   "run_id": "40132696085",
+   "source": "measured"
+  },
+  {
+   "sha": "9fb0083cc40219cfec5f4697b3b4fb3816d2f8c9",
+   "branch": "debt/release-0.4.8",
    "runner": "windows-latest",
    "taken": "2026-10-24T21:35:18Z",
    "machine": {
