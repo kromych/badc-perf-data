@@ -1,0 +1,409 @@
+{
+ "schema": 3,
+ "taken": "2026-10-25T18:43:37Z",
+ "commit": {
+  "sha": "b2eacf1b01817cf548c09594cd153072a49966d1",
+  "branch": "debt/release-0.4.8"
+ },
+ "machine": {
+  "system": "Windows",
+  "release": "2025Server",
+  "arch": "AMD64",
+  "cpu": "AMD EPYC 7763 64-Core Processor",
+  "runner": "windows-latest"
+ },
+ "runs_per_fixture": 3,
+ "compilers": [
+  {
+   "name": "badc",
+   "version": "badc 0.4.8 (gcc-compatible, GNU C 4.3.0, git 3346bbed1d81)",
+   "flags": []
+  },
+  {
+   "name": "badc -O",
+   "version": "badc 0.4.8 (gcc-compatible, GNU C 4.3.0, git 3346bbed1d81)",
+   "flags": [
+    "-O"
+   ]
+  },
+  {
+   "name": "cl /Od",
+   "version": "Microsoft (R) C/C++ Optimizing Compiler Version 19.51.36260 for x64",
+   "flags": [
+    "/nologo",
+    "/MD",
+    "/Od"
+   ]
+  },
+  {
+   "name": "cl /O2",
+   "version": "Microsoft (R) C/C++ Optimizing Compiler Version 19.51.36260 for x64",
+   "flags": [
+    "/nologo",
+    "/MD",
+    "/O2",
+    "/DNDEBUG"
+   ]
+  },
+  {
+   "name": "cl /O2 /arch:AVX2",
+   "version": "Microsoft (R) C/C++ Optimizing Compiler Version 19.51.36260 for x64",
+   "flags": [
+    "/nologo",
+    "/MD",
+    "/O2",
+    "/DNDEBUG",
+    "/arch:AVX2"
+   ],
+   "level": "x86-64-v3"
+  }
+ ],
+ "fixtures": [
+  "fib.c",
+  "qsort.c",
+  "sieve.c",
+  "munchausen.c",
+  "crypto.c",
+  "compress.c",
+  "stb.c",
+  "sqlite.c",
+  "sqlite_bench.c",
+  "quickjs_bench.c"
+ ],
+ "results": [
+  {
+   "fixture": "fib.c",
+   "compiler": "badc",
+   "run_ms": 301.15,
+   "compile_ms": 299.5,
+   "binary_bytes": 9418
+  },
+  {
+   "fixture": "fib.c",
+   "compiler": "badc -O",
+   "run_ms": 113.8,
+   "compile_ms": 385.3,
+   "binary_bytes": 8394
+  },
+  {
+   "fixture": "fib.c",
+   "compiler": "cl /Od",
+   "run_ms": 207.34,
+   "compile_ms": 1869.1,
+   "binary_bytes": 9728
+  },
+  {
+   "fixture": "fib.c",
+   "compiler": "cl /O2",
+   "run_ms": 204.27,
+   "compile_ms": 269.5,
+   "binary_bytes": 9728
+  },
+  {
+   "fixture": "fib.c",
+   "compiler": "cl /O2 /arch:AVX2",
+   "run_ms": 207.79,
+   "compile_ms": 220.9,
+   "binary_bytes": 9728
+  },
+  {
+   "fixture": "qsort.c",
+   "compiler": "badc",
+   "run_ms": 319.58,
+   "compile_ms": 309.2,
+   "binary_bytes": 9930
+  },
+  {
+   "fixture": "qsort.c",
+   "compiler": "badc -O",
+   "run_ms": 164.15,
+   "compile_ms": 416.9,
+   "binary_bytes": 8906
+  },
+  {
+   "fixture": "qsort.c",
+   "compiler": "cl /Od",
+   "run_ms": 267.06,
+   "compile_ms": 386.4,
+   "binary_bytes": 10240
+  },
+  {
+   "fixture": "qsort.c",
+   "compiler": "cl /O2",
+   "run_ms": 164.19,
+   "compile_ms": 503.5,
+   "binary_bytes": 10240
+  },
+  {
+   "fixture": "qsort.c",
+   "compiler": "cl /O2 /arch:AVX2",
+   "run_ms": 163.73,
+   "compile_ms": 207.1,
+   "binary_bytes": 10240
+  },
+  {
+   "fixture": "sieve.c",
+   "compiler": "badc",
+   "run_ms": 266.3,
+   "compile_ms": 400.2,
+   "binary_bytes": 9418
+  },
+  {
+   "fixture": "sieve.c",
+   "compiler": "badc -O",
+   "run_ms": 124.13,
+   "compile_ms": 511.3,
+   "binary_bytes": 8394
+  },
+  {
+   "fixture": "sieve.c",
+   "compiler": "cl /Od",
+   "run_ms": 254.01,
+   "compile_ms": 191.8,
+   "binary_bytes": 10240
+  },
+  {
+   "fixture": "sieve.c",
+   "compiler": "cl /O2",
+   "run_ms": 107.44,
+   "compile_ms": 200.7,
+   "binary_bytes": 9728
+  },
+  {
+   "fixture": "sieve.c",
+   "compiler": "cl /O2 /arch:AVX2",
+   "run_ms": 104.62,
+   "compile_ms": 183.2,
+   "binary_bytes": 9728
+  },
+  {
+   "fixture": "munchausen.c",
+   "compiler": "badc",
+   "run_ms": 1337.79,
+   "compile_ms": 284.1,
+   "binary_bytes": 9436
+  },
+  {
+   "fixture": "munchausen.c",
+   "compiler": "badc -O",
+   "run_ms": 234.01,
+   "compile_ms": 391.4,
+   "binary_bytes": 8924
+  },
+  {
+   "fixture": "munchausen.c",
+   "compiler": "cl /Od",
+   "run_ms": 898.16,
+   "compile_ms": 184.6,
+   "binary_bytes": 10240
+  },
+  {
+   "fixture": "munchausen.c",
+   "compiler": "cl /O2",
+   "run_ms": 298.79,
+   "compile_ms": 199.8,
+   "binary_bytes": 10752
+  },
+  {
+   "fixture": "munchausen.c",
+   "compiler": "cl /O2 /arch:AVX2",
+   "run_ms": 298.97,
+   "compile_ms": 205.6,
+   "binary_bytes": 10752
+  },
+  {
+   "fixture": "crypto.c",
+   "compiler": "badc",
+   "run_ms": 2559.8,
+   "compile_ms": 298.0,
+   "binary_bytes": 30922
+  },
+  {
+   "fixture": "crypto.c",
+   "compiler": "badc -O",
+   "run_ms": 189.06,
+   "compile_ms": 472.4,
+   "binary_bytes": 30922
+  },
+  {
+   "fixture": "crypto.c",
+   "compiler": "cl /Od",
+   "run_ms": 1829.29,
+   "compile_ms": 193.3,
+   "binary_bytes": 33280
+  },
+  {
+   "fixture": "crypto.c",
+   "compiler": "cl /O2",
+   "run_ms": 467.82,
+   "compile_ms": 504.0,
+   "binary_bytes": 17920
+  },
+  {
+   "fixture": "crypto.c",
+   "compiler": "cl /O2 /arch:AVX2",
+   "run_ms": 491.23,
+   "compile_ms": 518.8,
+   "binary_bytes": 17920
+  },
+  {
+   "fixture": "compress.c",
+   "compiler": "badc",
+   "run_ms": 880.83,
+   "compile_ms": 329.1,
+   "binary_bytes": 66322
+  },
+  {
+   "fixture": "compress.c",
+   "compiler": "badc -O",
+   "run_ms": 380.33,
+   "compile_ms": 550.3,
+   "binary_bytes": 43282
+  },
+  {
+   "fixture": "compress.c",
+   "compiler": "cl /Od",
+   "run_ms": 943.29,
+   "compile_ms": 275.7,
+   "binary_bytes": 72192
+  },
+  {
+   "fixture": "compress.c",
+   "compiler": "cl /O2",
+   "run_ms": 431.2,
+   "compile_ms": 724.9,
+   "binary_bytes": 34816
+  },
+  {
+   "fixture": "compress.c",
+   "compiler": "cl /O2 /arch:AVX2",
+   "run_ms": 427.61,
+   "compile_ms": 720.9,
+   "binary_bytes": 35840
+  },
+  {
+   "fixture": "stb.c",
+   "compiler": "badc",
+   "run_ms": 268.97,
+   "compile_ms": 286.1,
+   "binary_bytes": 15050
+  },
+  {
+   "fixture": "stb.c",
+   "compiler": "badc -O",
+   "run_ms": 78.08,
+   "compile_ms": 409.4,
+   "binary_bytes": 13514
+  },
+  {
+   "fixture": "stb.c",
+   "compiler": "cl /Od",
+   "run_ms": 241.01,
+   "compile_ms": 183.2,
+   "binary_bytes": 15872
+  },
+  {
+   "fixture": "stb.c",
+   "compiler": "cl /O2",
+   "run_ms": 62.38,
+   "compile_ms": 220.5,
+   "binary_bytes": 12288
+  },
+  {
+   "fixture": "stb.c",
+   "compiler": "cl /O2 /arch:AVX2",
+   "run_ms": 62.48,
+   "compile_ms": 210.9,
+   "binary_bytes": 12288
+  },
+  {
+   "fixture": "sqlite.c",
+   "compiler": "badc",
+   "run_ms": 31.49,
+   "compile_ms": 1400.0,
+   "binary_bytes": 1336617
+  },
+  {
+   "fixture": "sqlite.c",
+   "compiler": "badc -O",
+   "run_ms": 15.96,
+   "compile_ms": 7145.2,
+   "binary_bytes": 1818409
+  },
+  {
+   "fixture": "sqlite.c",
+   "compiler": "cl /Od",
+   "run_ms": 22.68,
+   "compile_ms": 898.9,
+   "binary_bytes": 1210880
+  },
+  {
+   "fixture": "sqlite.c",
+   "compiler": "cl /O2",
+   "run_ms": 10.39,
+   "compile_ms": 13891.9,
+   "binary_bytes": 1043968
+  },
+  {
+   "fixture": "sqlite.c",
+   "compiler": "cl /O2 /arch:AVX2",
+   "run_ms": 10.69,
+   "compile_ms": 13943.6,
+   "binary_bytes": 1044480
+  },
+  {
+   "fixture": "sqlite_bench.c",
+   "compiler": "badc",
+   "run_ms": 1151.17,
+   "compile_ms": 1375.8,
+   "binary_bytes": 1339177
+  },
+  {
+   "fixture": "sqlite_bench.c",
+   "compiler": "badc -O",
+   "run_ms": 540.03,
+   "compile_ms": 7182.5,
+   "binary_bytes": 1820457
+  },
+  {
+   "fixture": "sqlite_bench.c",
+   "compiler": "cl /Od",
+   "run_ms": 856.01,
+   "compile_ms": 897.5,
+   "binary_bytes": 1213440
+  },
+  {
+   "fixture": "sqlite_bench.c",
+   "compiler": "cl /O2",
+   "run_ms": 472.52,
+   "compile_ms": 13858.9,
+   "binary_bytes": 1046016
+  },
+  {
+   "fixture": "sqlite_bench.c",
+   "compiler": "cl /O2 /arch:AVX2",
+   "run_ms": 491.96,
+   "compile_ms": 13568.3,
+   "binary_bytes": 1046016
+  },
+  {
+   "fixture": "quickjs_bench.c",
+   "compiler": "badc",
+   "run_ms": 585.98,
+   "compile_ms": 1363.8,
+   "binary_bytes": 1391000
+  },
+  {
+   "fixture": "quickjs_bench.c",
+   "compiler": "badc -O",
+   "run_ms": 173.65,
+   "compile_ms": 5868.1,
+   "binary_bytes": 1213848
+  }
+ ],
+ "provenance": {
+  "source": "measured",
+  "run_id": "40219927967",
+  "url": "https://github.com/kromych/badc/actions/runs/40219927967"
+ }
+}
