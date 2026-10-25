@@ -21,6 +21,23 @@
   {
    "sha": "b2eacf1b01817cf548c09594cd153072a49966d1",
    "branch": "debt/release-0.4.8",
+   "runner": "ubuntu-latest",
+   "taken": "2026-10-25T18:50:05Z",
+   "machine": {
+    "system": "Linux",
+    "release": "6.17.0-1022-azure",
+    "arch": "x86_64",
+    "cpu": "AMD EPYC 7763 64-Core Processor",
+    "image": "ubuntu-24.04",
+    "runner": "ubuntu-latest"
+   },
+   "path": "runs/b2/ea/b2eacf1b01817cf548c09594cd153072a49966d1/ubuntu-latest.json",
+   "run_id": "40219927967",
+   "source": "measured"
+  },
+  {
+   "sha": "b2eacf1b01817cf548c09594cd153072a49966d1",
+   "branch": "debt/release-0.4.8",
    "runner": "windows-latest",
    "taken": "2026-10-25T18:43:37Z",
    "machine": {
