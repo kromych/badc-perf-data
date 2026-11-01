@@ -2,6 +2,22 @@
  "schema": 2,
  "runs": [
   {
+   "sha": "287e67ae9b01789d66aac7c0a1805a2692395397",
+   "branch": "debt/release-0.4.8-02",
+   "runner": "windows-11-arm",
+   "taken": "2026-11-01T22:34:14Z",
+   "machine": {
+    "system": "Windows",
+    "release": "11",
+    "arch": "ARM64",
+    "cpu": "Cobalt 100",
+    "runner": "windows-11-arm"
+   },
+   "path": "runs/28/7e/287e67ae9b01789d66aac7c0a1805a2692395397/windows-11-arm.json",
+   "run_id": "41356195188",
+   "source": "measured"
+  },
+  {
    "sha": "5bb09ad095280eb66a49b1a9baeda7ceb7671c71",
    "branch": "debt/release-0.4.8-02",
    "runner": "ubuntu-latest",
