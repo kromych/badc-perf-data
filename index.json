@@ -4,6 +4,23 @@
   {
    "sha": "ae92b7d46bf63d2e97d78cf564bb118eae03bd8c",
    "branch": "master",
+   "runner": "ubuntu-latest",
+   "taken": "2026-11-04T02:57:00Z",
+   "machine": {
+    "system": "Linux",
+    "release": "7.0.0-1017-azure",
+    "arch": "x86_64",
+    "cpu": "Intel(R) Xeon(R) Platinum 8370C CPU @ 2.80GHz",
+    "image": "ubuntu-24.04",
+    "runner": "ubuntu-latest"
+   },
+   "path": "runs/ae/92/ae92b7d46bf63d2e97d78cf564bb118eae03bd8c/ubuntu-latest.json",
+   "run_id": "41760567096",
+   "source": "measured"
+  },
+  {
+   "sha": "ae92b7d46bf63d2e97d78cf564bb118eae03bd8c",
+   "branch": "master",
    "runner": "ubuntu-24.04-arm",
    "taken": "2026-11-04T02:56:24Z",
    "machine": {
