@@ -18,6 +18,22 @@
    "source": "measured"
   },
   {
+   "sha": "e5f28ebbe1d5d6686aa1b1f3aa647b380357e2bc",
+   "branch": "debt/release-0.4.10",
+   "runner": "windows-11-arm",
+   "taken": "2026-11-08T08:25:21Z",
+   "machine": {
+    "system": "Windows",
+    "release": "11",
+    "arch": "ARM64",
+    "cpu": "Cobalt 100",
+    "runner": "windows-11-arm"
+   },
+   "path": "runs/e5/f2/e5f28ebbe1d5d6686aa1b1f3aa647b380357e2bc/windows-11-arm.json",
+   "run_id": "42460847950",
+   "source": "measured"
+  },
+  {
    "sha": "1e83b3ba07979d7fdc52a7ea464a8706e59204d9",
    "branch": "debt/release-0.4.10",
    "runner": "ubuntu-24.04-arm",
