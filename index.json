@@ -4,6 +4,23 @@
   {
    "sha": "45a1411cb264af2b2fc8cd304291ecde99e3203c",
    "branch": "debt/release-0.4.10",
+   "runner": "ubuntu-latest",
+   "taken": "2026-11-12T23:56:15Z",
+   "machine": {
+    "system": "Linux",
+    "release": "7.0.0-1019-azure",
+    "arch": "x86_64",
+    "cpu": "AMD EPYC 9V45 96-Core Processor",
+    "image": "ubuntu-26.04",
+    "runner": "ubuntu-latest"
+   },
+   "path": "runs/45/a1/45a1411cb264af2b2fc8cd304291ecde99e3203c/ubuntu-latest.json",
+   "run_id": "43327699072",
+   "source": "measured"
+  },
+  {
+   "sha": "45a1411cb264af2b2fc8cd304291ecde99e3203c",
+   "branch": "debt/release-0.4.10",
    "runner": "windows-latest",
    "taken": "2026-11-12T23:52:06Z",
    "machine": {
