@@ -20,6 +20,23 @@
   {
    "sha": "3a47a314d1a4c943b5ebdd7f10b803957c499507",
    "branch": "debt/release-0.4.10",
+   "runner": "ubuntu-latest",
+   "taken": "2026-11-12T05:17:47Z",
+   "machine": {
+    "system": "Linux",
+    "release": "7.0.0-1019-azure",
+    "arch": "x86_64",
+    "cpu": "AMD EPYC 9V74 80-Core Processor",
+    "image": "ubuntu-26.04",
+    "runner": "ubuntu-latest"
+   },
+   "path": "runs/3a/47/3a47a314d1a4c943b5ebdd7f10b803957c499507/ubuntu-latest.json",
+   "run_id": "43155619156",
+   "source": "measured"
+  },
+  {
+   "sha": "3a47a314d1a4c943b5ebdd7f10b803957c499507",
+   "branch": "debt/release-0.4.10",
    "runner": "windows-11-arm",
    "taken": "2026-11-12T05:11:07Z",
    "machine": {
