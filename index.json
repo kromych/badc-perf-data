@@ -4,6 +4,22 @@
   {
    "sha": "15fe0d20772e399bb158a48497e767f4bd3dd705",
    "branch": "debt/release-0.4.10",
+   "runner": "windows-11-arm",
+   "taken": "2026-11-13T16:34:04Z",
+   "machine": {
+    "system": "Windows",
+    "release": "11",
+    "arch": "ARM64",
+    "cpu": "Cobalt 100",
+    "runner": "windows-11-arm"
+   },
+   "path": "runs/15/fe/15fe0d20772e399bb158a48497e767f4bd3dd705/windows-11-arm.json",
+   "run_id": "43456781100",
+   "source": "measured"
+  },
+  {
+   "sha": "15fe0d20772e399bb158a48497e767f4bd3dd705",
+   "branch": "debt/release-0.4.10",
    "runner": "windows-latest",
    "taken": "2026-11-13T16:32:27Z",
    "machine": {
