@@ -2,6 +2,22 @@
  "schema": 2,
  "runs": [
   {
+   "sha": "cf9524422f6b423a90b30999443008e1fba3d3a2",
+   "branch": "debt/release-0.5.0",
+   "runner": "windows-latest",
+   "taken": "2026-11-25T22:15:48Z",
+   "machine": {
+    "system": "Windows",
+    "release": "2025Server",
+    "arch": "AMD64",
+    "cpu": "AMD EPYC 9V45 96-Core Processor",
+    "runner": "windows-latest"
+   },
+   "path": "runs/cf/95/cf9524422f6b423a90b30999443008e1fba3d3a2/windows-latest.json",
+   "run_id": "45704902289",
+   "source": "measured"
+  },
+  {
    "sha": "795d2c60be61e6738b9a3f4bebdb0db9ca0dd728",
    "branch": "debt/release-0.5.0",
    "runner": "ubuntu-24.04-arm",
