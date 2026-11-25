@@ -21,6 +21,23 @@
   {
    "sha": "185c667614f5aeba20881783024606d8301a47e7",
    "branch": "debt/release-0.5.0",
+   "runner": "ubuntu-latest",
+   "taken": "2026-11-25T00:51:02Z",
+   "machine": {
+    "system": "Linux",
+    "release": "7.0.0-1020-azure",
+    "arch": "x86_64",
+    "cpu": "Intel(R) Xeon(R) Platinum 8370C CPU @ 2.80GHz",
+    "image": "ubuntu-26.04",
+    "runner": "ubuntu-latest"
+   },
+   "path": "runs/18/5c/185c667614f5aeba20881783024606d8301a47e7/ubuntu-latest.json",
+   "run_id": "45512679850",
+   "source": "measured"
+  },
+  {
+   "sha": "185c667614f5aeba20881783024606d8301a47e7",
+   "branch": "debt/release-0.5.0",
    "runner": "windows-latest",
    "taken": "2026-11-25T00:42:33Z",
    "machine": {
