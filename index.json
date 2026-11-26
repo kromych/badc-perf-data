@@ -4,6 +4,22 @@
   {
    "sha": "01262d2de775b109e12a32548d80dff909055206",
    "branch": "debt/release-0.5.0",
+   "runner": "windows-latest",
+   "taken": "2026-11-26T05:20:39Z",
+   "machine": {
+    "system": "Windows",
+    "release": "2025Server",
+    "arch": "AMD64",
+    "cpu": "AMD EPYC 7763 64-Core Processor",
+    "runner": "windows-latest"
+   },
+   "path": "runs/01/26/01262d2de775b109e12a32548d80dff909055206/windows-latest.json",
+   "run_id": "45755433116",
+   "source": "measured"
+  },
+  {
+   "sha": "01262d2de775b109e12a32548d80dff909055206",
+   "branch": "debt/release-0.5.0",
    "runner": "windows-11-arm",
    "taken": "2026-11-26T05:19:37Z",
    "machine": {
