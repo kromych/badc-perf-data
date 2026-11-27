@@ -1,0 +1,1993 @@
+{
+ "schema": 3,
+ "taken": "2026-11-27T10:57:00Z",
+ "commit": {
+  "sha": "0f8be22895e613f82505c7aab618296ef8ba21b5",
+  "branch": "debt/release-0.5.0"
+ },
+ "machine": {
+  "system": "Linux",
+  "release": "7.0.0-1020-azure",
+  "arch": "x86_64",
+  "cpu": "AMD EPYC 7763 64-Core Processor",
+  "image": "ubuntu-26.04",
+  "runner": "ubuntu-latest",
+  "clock": "not held: the runs are not pinned to a CPU whose governor this host exposes"
+ },
+ "runs_per_fixture": 3,
+ "compilers": [
+  {
+   "name": "badc",
+   "version": "badc 0.5.0 (gcc-compatible, GNU C 4.3.0, git 7adec5f3e056)",
+   "flags": []
+  },
+  {
+   "name": "badc -O",
+   "version": "badc 0.5.0 (gcc-compatible, GNU C 4.3.0, git 7adec5f3e056)",
+   "flags": [
+    "-O",
+    "-DNDEBUG"
+   ]
+  },
+  {
+   "name": "tcc",
+   "version": "tcc version 0.9.28-perf (x86_64 Linux)",
+   "flags": [
+    "-B/home/runner/work/badc/badc/tests/perf/build",
+    "-I/home/runner/work/badc/badc/tests/perf/build/include",
+    "-L/home/runner/work/badc/badc/tests/perf/build",
+    "-lm"
+   ]
+  },
+  {
+   "name": "ccc -O2",
+   "version": "ccc (Claude's C Compiler, GCC-compatible) 14.2.0",
+   "flags": [
+    "-O2",
+    "-DNDEBUG",
+    "-idirafter",
+    "/usr/lib/gcc/x86_64-linux-gnu/15/include",
+    "-lm"
+   ]
+  },
+  {
+   "name": "clang -O0",
+   "version": "Ubuntu clang version 21.1.8 (6ubuntu1)",
+   "flags": [
+    "-O0",
+    "-lm"
+   ]
+  },
+  {
+   "name": "clang -O2",
+   "version": "Ubuntu clang version 21.1.8 (6ubuntu1)",
+   "flags": [
+    "-O2",
+    "-DNDEBUG",
+    "-lm"
+   ]
+  },
+  {
+   "name": "clang -O2 -march=x86-64-v3",
+   "version": "Ubuntu clang version 21.1.8 (6ubuntu1)",
+   "flags": [
+    "-O2",
+    "-DNDEBUG",
+    "-march=x86-64-v3",
+    "-lm"
+   ],
+   "level": "x86-64-v3"
+  },
+  {
+   "name": "gcc -O0",
+   "version": "gcc (Ubuntu 15.2.0-16ubuntu1) 15.2.0",
+   "flags": [
+    "-O0",
+    "-lm"
+   ]
+  },
+  {
+   "name": "gcc -O2",
+   "version": "gcc (Ubuntu 15.2.0-16ubuntu1) 15.2.0",
+   "flags": [
+    "-O2",
+    "-DNDEBUG",
+    "-lm"
+   ]
+  },
+  {
+   "name": "gcc -O2 -march=x86-64-v3",
+   "version": "gcc (Ubuntu 15.2.0-16ubuntu1) 15.2.0",
+   "flags": [
+    "-O2",
+    "-DNDEBUG",
+    "-march=x86-64-v3",
+    "-lm"
+   ],
+   "level": "x86-64-v3"
+  }
+ ],
+ "fixtures": [
+  "fib.c",
+  "qsort.c",
+  "sieve.c",
+  "munchausen.c",
+  "nbody.c",
+  "spectral_norm.c",
+  "mandelbrot.c",
+  "horner.c",
+  "fannkuch.c",
+  "nqueens.c",
+  "sudoku.c",
+  "binary_trees.c",
+  "crypto.c",
+  "blake2b.c",
+  "adler32.c",
+  "crc32.c",
+  "compress.c",
+  "stb.c",
+  "sqlite.c",
+  "sqlite_bench.c",
+  "quickjs_bench.c"
+ ],
+ "results": [
+  {
+   "fixture": "fib.c",
+   "compiler": "badc",
+   "run_ms": 265.38,
+   "compile_ms": 8.2,
+   "binary_bytes": 18744,
+   "run_spread": 0.0062,
+   "runs": 3
+  },
+  {
+   "fixture": "fib.c",
+   "compiler": "badc -O",
+   "run_ms": 61.29,
+   "compile_ms": 10.0,
+   "binary_bytes": 18624,
+   "run_spread": 0.2247,
+   "runs": 9
+  },
+  {
+   "fixture": "fib.c",
+   "compiler": "tcc",
+   "run_ms": 261.34,
+   "compile_ms": 4.6,
+   "binary_bytes": 4530,
+   "run_spread": 0.0427,
+   "runs": 9
+  },
+  {
+   "fixture": "fib.c",
+   "compiler": "ccc -O2",
+   "run_ms": 328.19,
+   "compile_ms": 264.2,
+   "binary_bytes": 14672,
+   "run_spread": 0.0027,
+   "runs": 3
+  },
+  {
+   "fixture": "fib.c",
+   "compiler": "clang -O0",
+   "run_ms": 260.66,
+   "compile_ms": 159.9,
+   "binary_bytes": 16120,
+   "run_spread": 0.0057,
+   "runs": 3
+  },
+  {
+   "fixture": "fib.c",
+   "compiler": "clang -O2",
+   "run_ms": 99.31,
+   "compile_ms": 72.1,
+   "binary_bytes": 16136,
+   "run_spread": 0.0108,
+   "runs": 3
+  },
+  {
+   "fixture": "fib.c",
+   "compiler": "clang -O2 -march=x86-64-v3",
+   "run_ms": 119.23,
+   "compile_ms": 250.1,
+   "binary_bytes": 16136,
+   "run_spread": 0.0055,
+   "runs": 3
+  },
+  {
+   "fixture": "fib.c",
+   "compiler": "gcc -O0",
+   "run_ms": 229.8,
+   "compile_ms": 1183.6,
+   "binary_bytes": 16152,
+   "run_spread": 0.0031,
+   "runs": 3
+  },
+  {
+   "fixture": "fib.c",
+   "compiler": "gcc -O2",
+   "run_ms": 62.66,
+   "compile_ms": 643.0,
+   "binary_bytes": 16160,
+   "run_spread": 0.0061,
+   "runs": 3
+  },
+  {
+   "fixture": "fib.c",
+   "compiler": "gcc -O2 -march=x86-64-v3",
+   "run_ms": 62.61,
+   "compile_ms": 71.7,
+   "binary_bytes": 16160,
+   "run_spread": 0.0035,
+   "runs": 3
+  },
+  {
+   "fixture": "qsort.c",
+   "compiler": "badc",
+   "run_ms": 286.45,
+   "compile_ms": 10.2,
+   "binary_bytes": 18808,
+   "run_spread": 0.0031,
+   "runs": 3
+  },
+  {
+   "fixture": "qsort.c",
+   "compiler": "badc -O",
+   "run_ms": 163.54,
+   "compile_ms": 13.1,
+   "binary_bytes": 18688,
+   "run_spread": 0.0069,
+   "runs": 3
+  },
+  {
+   "fixture": "qsort.c",
+   "compiler": "tcc",
+   "run_ms": 258.29,
+   "compile_ms": 5.1,
+   "binary_bytes": 5274,
+   "run_spread": 0.0016,
+   "runs": 3
+  },
+  {
+   "fixture": "qsort.c",
+   "compiler": "ccc -O2",
+   "run_ms": 256.77,
+   "compile_ms": 29.1,
+   "binary_bytes": 14688,
+   "run_spread": 0.0029,
+   "runs": 3
+  },
+  {
+   "fixture": "qsort.c",
+   "compiler": "clang -O0",
+   "run_ms": 282.86,
+   "compile_ms": 75.5,
+   "binary_bytes": 16216,
+   "run_spread": 0.0009,
+   "runs": 3
+  },
+  {
+   "fixture": "qsort.c",
+   "compiler": "clang -O2",
+   "run_ms": 157.44,
+   "compile_ms": 87.8,
+   "binary_bytes": 16184,
+   "run_spread": 0.0009,
+   "runs": 3
+  },
+  {
+   "fixture": "qsort.c",
+   "compiler": "clang -O2 -march=x86-64-v3",
+   "run_ms": 156.89,
+   "compile_ms": 87.6,
+   "binary_bytes": 16184,
+   "run_spread": 0.0015,
+   "runs": 3
+  },
+  {
+   "fixture": "qsort.c",
+   "compiler": "gcc -O0",
+   "run_ms": 255.29,
+   "compile_ms": 67.8,
+   "binary_bytes": 16200,
+   "run_spread": 0.0022,
+   "runs": 3
+  },
+  {
+   "fixture": "qsort.c",
+   "compiler": "gcc -O2",
+   "run_ms": 156.67,
+   "compile_ms": 88.6,
+   "binary_bytes": 16208,
+   "run_spread": 0.0024,
+   "runs": 3
+  },
+  {
+   "fixture": "qsort.c",
+   "compiler": "gcc -O2 -march=x86-64-v3",
+   "run_ms": 156.76,
+   "compile_ms": 67.9,
+   "binary_bytes": 16208,
+   "run_spread": 0.0019,
+   "runs": 3
+  },
+  {
+   "fixture": "sieve.c",
+   "compiler": "badc",
+   "run_ms": 241.02,
+   "compile_ms": 8.3,
+   "binary_bytes": 18752,
+   "run_spread": 0.0275,
+   "runs": 3
+  },
+  {
+   "fixture": "sieve.c",
+   "compiler": "badc -O",
+   "run_ms": 102.58,
+   "compile_ms": 10.9,
+   "binary_bytes": 18632,
+   "run_spread": 0.2049,
+   "runs": 9
+  },
+  {
+   "fixture": "sieve.c",
+   "compiler": "tcc",
+   "run_ms": 241.42,
+   "compile_ms": 4.2,
+   "binary_bytes": 4650,
+   "run_spread": 0.0064,
+   "runs": 3
+  },
+  {
+   "fixture": "sieve.c",
+   "compiler": "ccc -O2",
+   "run_ms": 196.98,
+   "compile_ms": 51.7,
+   "binary_bytes": 14672,
+   "run_spread": 0.0843,
+   "runs": 9
+  },
+  {
+   "fixture": "sieve.c",
+   "compiler": "clang -O0",
+   "run_ms": 308.98,
+   "compile_ms": 63.6,
+   "binary_bytes": 16128,
+   "run_spread": 0.0264,
+   "runs": 3
+  },
+  {
+   "fixture": "sieve.c",
+   "compiler": "clang -O2",
+   "run_ms": 103.84,
+   "compile_ms": 78.1,
+   "binary_bytes": 16144,
+   "run_spread": 0.1097,
+   "runs": 9
+  },
+  {
+   "fixture": "sieve.c",
+   "compiler": "clang -O2 -march=x86-64-v3",
+   "run_ms": 93.63,
+   "compile_ms": 86.2,
+   "binary_bytes": 16144,
+   "run_spread": 0.0237,
+   "runs": 3
+  },
+  {
+   "fixture": "sieve.c",
+   "compiler": "gcc -O0",
+   "run_ms": 213.63,
+   "compile_ms": 43.9,
+   "binary_bytes": 16160,
+   "run_spread": 0.0507,
+   "runs": 9
+  },
+  {
+   "fixture": "sieve.c",
+   "compiler": "gcc -O2",
+   "run_ms": 92.58,
+   "compile_ms": 59.1,
+   "binary_bytes": 16168,
+   "run_spread": 0.087,
+   "runs": 9
+  },
+  {
+   "fixture": "sieve.c",
+   "compiler": "gcc -O2 -march=x86-64-v3",
+   "run_ms": 96.26,
+   "compile_ms": 54.5,
+   "binary_bytes": 16168,
+   "run_spread": 0.0221,
+   "runs": 3
+  },
+  {
+   "fixture": "munchausen.c",
+   "compiler": "badc",
+   "run_ms": 1184.76,
+   "compile_ms": 10.9,
+   "binary_bytes": 18856,
+   "run_spread": 0.001,
+   "runs": 3
+  },
+  {
+   "fixture": "munchausen.c",
+   "compiler": "badc -O",
+   "run_ms": 216.94,
+   "compile_ms": 14.9,
+   "binary_bytes": 18696,
+   "run_spread": 0.0053,
+   "runs": 3
+  },
+  {
+   "fixture": "munchausen.c",
+   "compiler": "tcc",
+   "run_ms": 818.33,
+   "compile_ms": 6.3,
+   "binary_bytes": 5090,
+   "run_spread": 0.0039,
+   "runs": 3
+  },
+  {
+   "fixture": "munchausen.c",
+   "compiler": "ccc -O2",
+   "run_ms": 643.5,
+   "compile_ms": 32.1,
+   "binary_bytes": 14704,
+   "run_spread": 0.0013,
+   "runs": 3
+  },
+  {
+   "fixture": "munchausen.c",
+   "compiler": "clang -O0",
+   "run_ms": 883.24,
+   "compile_ms": 78.8,
+   "binary_bytes": 16240,
+   "run_spread": 0.0014,
+   "runs": 3
+  },
+  {
+   "fixture": "munchausen.c",
+   "compiler": "clang -O2",
+   "run_ms": 265.86,
+   "compile_ms": 87.1,
+   "binary_bytes": 16208,
+   "run_spread": 0.0046,
+   "runs": 3
+  },
+  {
+   "fixture": "munchausen.c",
+   "compiler": "clang -O2 -march=x86-64-v3",
+   "run_ms": 265.71,
+   "compile_ms": 88.1,
+   "binary_bytes": 16208,
+   "run_spread": 0.0022,
+   "runs": 3
+  },
+  {
+   "fixture": "munchausen.c",
+   "compiler": "gcc -O0",
+   "run_ms": 1242.62,
+   "compile_ms": 53.6,
+   "binary_bytes": 16272,
+   "run_spread": 0.0008,
+   "runs": 3
+  },
+  {
+   "fixture": "munchausen.c",
+   "compiler": "gcc -O2",
+   "run_ms": 243.4,
+   "compile_ms": 101.6,
+   "binary_bytes": 16272,
+   "run_spread": 0.0019,
+   "runs": 3
+  },
+  {
+   "fixture": "munchausen.c",
+   "compiler": "gcc -O2 -march=x86-64-v3",
+   "run_ms": 243.58,
+   "compile_ms": 73.2,
+   "binary_bytes": 16272,
+   "run_spread": 0.0006,
+   "runs": 3
+  },
+  {
+   "fixture": "nbody.c",
+   "compiler": "badc",
+   "run_ms": 1129.86,
+   "compile_ms": 11.5,
+   "binary_bytes": 18856,
+   "run_spread": 0.0006,
+   "runs": 3
+  },
+  {
+   "fixture": "nbody.c",
+   "compiler": "badc -O",
+   "run_ms": 317.19,
+   "compile_ms": 16.2,
+   "binary_bytes": 18664,
+   "run_spread": 0.0018,
+   "runs": 3
+  },
+  {
+   "fixture": "nbody.c",
+   "compiler": "tcc",
+   "run_ms": 1453.32,
+   "compile_ms": 6.4,
+   "binary_bytes": 7378,
+   "run_spread": 0.0004,
+   "runs": 3
+  },
+  {
+   "fixture": "nbody.c",
+   "compiler": "ccc -O2",
+   "run_ms": 3057.03,
+   "compile_ms": 34.9,
+   "binary_bytes": 19048,
+   "run_spread": 0.007,
+   "runs": 3
+  },
+  {
+   "fixture": "nbody.c",
+   "compiler": "clang -O0",
+   "run_ms": 1519.95,
+   "compile_ms": 74.7,
+   "binary_bytes": 16560,
+   "run_spread": 0.0003,
+   "runs": 3
+  },
+  {
+   "fixture": "nbody.c",
+   "compiler": "clang -O2",
+   "run_ms": 348.53,
+   "compile_ms": 109.5,
+   "binary_bytes": 16368,
+   "run_spread": 0.0022,
+   "runs": 3
+  },
+  {
+   "fixture": "nbody.c",
+   "compiler": "clang -O2 -march=x86-64-v3",
+   "run_ms": 312.91,
+   "compile_ms": 109.6,
+   "binary_bytes": 16368,
+   "run_spread": 0.0001,
+   "runs": 3
+  },
+  {
+   "fixture": "nbody.c",
+   "compiler": "gcc -O0",
+   "run_ms": 1731.36,
+   "compile_ms": 109.1,
+   "binary_bytes": 16560,
+   "run_spread": 0.0007,
+   "runs": 3
+  },
+  {
+   "fixture": "nbody.c",
+   "compiler": "gcc -O2",
+   "run_ms": 331.09,
+   "compile_ms": 372.5,
+   "binary_bytes": 16464,
+   "run_spread": 0.0078,
+   "runs": 3
+  },
+  {
+   "fixture": "nbody.c",
+   "compiler": "gcc -O2 -march=x86-64-v3",
+   "run_ms": 330.54,
+   "compile_ms": 87.0,
+   "binary_bytes": 16464,
+   "run_spread": 0.0019,
+   "runs": 3
+  },
+  {
+   "fixture": "spectral_norm.c",
+   "compiler": "badc",
+   "run_ms": 1045.02,
+   "compile_ms": 11.1,
+   "binary_bytes": 18968,
+   "run_spread": 0.0003,
+   "runs": 3
+  },
+  {
+   "fixture": "spectral_norm.c",
+   "compiler": "badc -O",
+   "run_ms": 235.08,
+   "compile_ms": 15.0,
+   "binary_bytes": 18760,
+   "run_spread": 0.0038,
+   "runs": 3
+  },
+  {
+   "fixture": "spectral_norm.c",
+   "compiler": "tcc",
+   "run_ms": 609.79,
+   "compile_ms": 6.3,
+   "binary_bytes": 6066,
+   "run_spread": 0.0022,
+   "runs": 3
+  },
+  {
+   "fixture": "spectral_norm.c",
+   "compiler": "ccc -O2",
+   "run_ms": 920.82,
+   "compile_ms": 34.3,
+   "binary_bytes": 14672,
+   "run_spread": 0.002,
+   "runs": 3
+  },
+  {
+   "fixture": "spectral_norm.c",
+   "compiler": "clang -O0",
+   "run_ms": 615.64,
+   "compile_ms": 74.8,
+   "binary_bytes": 16392,
+   "run_spread": 0.0067,
+   "runs": 3
+  },
+  {
+   "fixture": "spectral_norm.c",
+   "compiler": "clang -O2",
+   "run_ms": 230.21,
+   "compile_ms": 107.9,
+   "binary_bytes": 16232,
+   "run_spread": 0.0015,
+   "runs": 3
+  },
+  {
+   "fixture": "spectral_norm.c",
+   "compiler": "clang -O2 -march=x86-64-v3",
+   "run_ms": 224.17,
+   "compile_ms": 117.9,
+   "binary_bytes": 16232,
+   "run_spread": 0.0005,
+   "runs": 3
+  },
+  {
+   "fixture": "spectral_norm.c",
+   "compiler": "gcc -O0",
+   "run_ms": 612.57,
+   "compile_ms": 54.0,
+   "binary_bytes": 16376,
+   "run_spread": 0.0011,
+   "runs": 3
+  },
+  {
+   "fixture": "spectral_norm.c",
+   "compiler": "gcc -O2",
+   "run_ms": 148.15,
+   "compile_ms": 302.6,
+   "binary_bytes": 16344,
+   "run_spread": 0.0001,
+   "runs": 3
+  },
+  {
+   "fixture": "spectral_norm.c",
+   "compiler": "gcc -O2 -march=x86-64-v3",
+   "run_ms": 148.13,
+   "compile_ms": 92.1,
+   "binary_bytes": 16344,
+   "run_spread": 0.0005,
+   "runs": 3
+  },
+  {
+   "fixture": "mandelbrot.c",
+   "compiler": "badc",
+   "run_ms": 833.62,
+   "compile_ms": 9.8,
+   "binary_bytes": 18856,
+   "run_spread": 0.0003,
+   "runs": 3
+  },
+  {
+   "fixture": "mandelbrot.c",
+   "compiler": "badc -O",
+   "run_ms": 291.35,
+   "compile_ms": 15.5,
+   "binary_bytes": 18632,
+   "run_spread": 0.0001,
+   "runs": 3
+  },
+  {
+   "fixture": "mandelbrot.c",
+   "compiler": "tcc",
+   "run_ms": 883.68,
+   "compile_ms": 4.4,
+   "binary_bytes": 6178,
+   "run_spread": 0.0002,
+   "runs": 3
+  },
+  {
+   "fixture": "mandelbrot.c",
+   "compiler": "ccc -O2",
+   "run_ms": 1123.19,
+   "compile_ms": 77.7,
+   "binary_bytes": 14672,
+   "run_spread": 0.0007,
+   "runs": 3
+  },
+  {
+   "fixture": "mandelbrot.c",
+   "compiler": "clang -O0",
+   "run_ms": 887.81,
+   "compile_ms": 66.9,
+   "binary_bytes": 16232,
+   "run_spread": 0.0002,
+   "runs": 3
+  },
+  {
+   "fixture": "mandelbrot.c",
+   "compiler": "clang -O2",
+   "run_ms": 295.69,
+   "compile_ms": 88.8,
+   "binary_bytes": 16096,
+   "run_spread": 0.0008,
+   "runs": 3
+  },
+  {
+   "fixture": "mandelbrot.c",
+   "compiler": "clang -O2 -march=x86-64-v3",
+   "run_ms": 294.84,
+   "compile_ms": 88.3,
+   "binary_bytes": 16096,
+   "run_spread": 0.0001,
+   "runs": 3
+  },
+  {
+   "fixture": "mandelbrot.c",
+   "compiler": "gcc -O0",
+   "run_ms": 853.25,
+   "compile_ms": 44.3,
+   "binary_bytes": 16224,
+   "run_spread": 0.0005,
+   "runs": 3
+  },
+  {
+   "fixture": "mandelbrot.c",
+   "compiler": "gcc -O2",
+   "run_ms": 265.55,
+   "compile_ms": 121.9,
+   "binary_bytes": 16128,
+   "run_spread": 0.0004,
+   "runs": 3
+  },
+  {
+   "fixture": "mandelbrot.c",
+   "compiler": "gcc -O2 -march=x86-64-v3",
+   "run_ms": 265.6,
+   "compile_ms": 71.6,
+   "binary_bytes": 16128,
+   "run_spread": 0.0008,
+   "runs": 3
+  },
+  {
+   "fixture": "horner.c",
+   "compiler": "badc",
+   "run_ms": 1156.78,
+   "compile_ms": 11.8,
+   "binary_bytes": 18864,
+   "run_spread": 0.002,
+   "runs": 3
+  },
+  {
+   "fixture": "horner.c",
+   "compiler": "badc -O",
+   "run_ms": 242.67,
+   "compile_ms": 20.3,
+   "binary_bytes": 18680,
+   "run_spread": 0.0008,
+   "runs": 3
+  },
+  {
+   "fixture": "horner.c",
+   "compiler": "tcc",
+   "run_ms": 1236.8,
+   "compile_ms": 6.2,
+   "binary_bytes": 6818,
+   "run_spread": 0.0236,
+   "runs": 3
+  },
+  {
+   "fixture": "horner.c",
+   "compiler": "ccc -O2",
+   "run_ms": 6936.21,
+   "compile_ms": 34.8,
+   "binary_bytes": 18792,
+   "run_spread": 0.0114,
+   "runs": 3
+  },
+  {
+   "fixture": "horner.c",
+   "compiler": "clang -O0",
+   "run_ms": 2738.79,
+   "compile_ms": 76.7,
+   "binary_bytes": 16256,
+   "run_spread": 0.0007,
+   "runs": 3
+  },
+  {
+   "fixture": "horner.c",
+   "compiler": "clang -O2",
+   "run_ms": 423.53,
+   "compile_ms": 91.5,
+   "binary_bytes": 16136,
+   "run_spread": 0.001,
+   "runs": 3
+  },
+  {
+   "fixture": "horner.c",
+   "compiler": "clang -O2 -march=x86-64-v3",
+   "run_ms": 233.38,
+   "compile_ms": 96.4,
+   "binary_bytes": 16136,
+   "run_spread": 0.0008,
+   "runs": 3
+  },
+  {
+   "fixture": "horner.c",
+   "compiler": "gcc -O0",
+   "run_ms": 1125.49,
+   "compile_ms": 56.1,
+   "binary_bytes": 16248,
+   "run_spread": 0.0022,
+   "runs": 3
+  },
+  {
+   "fixture": "horner.c",
+   "compiler": "gcc -O2",
+   "run_ms": 345.7,
+   "compile_ms": 98.1,
+   "binary_bytes": 16272,
+   "run_spread": 0.0324,
+   "runs": 9
+  },
+  {
+   "fixture": "horner.c",
+   "compiler": "gcc -O2 -march=x86-64-v3",
+   "run_ms": 345.65,
+   "compile_ms": 76.3,
+   "binary_bytes": 16272,
+   "run_spread": 0.0015,
+   "runs": 3
+  },
+  {
+   "fixture": "fannkuch.c",
+   "compiler": "badc",
+   "run_ms": 473.47,
+   "compile_ms": 9.0,
+   "binary_bytes": 18752,
+   "run_spread": 0.0029,
+   "runs": 3
+  },
+  {
+   "fixture": "fannkuch.c",
+   "compiler": "badc -O",
+   "run_ms": 189.69,
+   "compile_ms": 13.1,
+   "binary_bytes": 18632,
+   "run_spread": 0.005,
+   "runs": 3
+  },
+  {
+   "fixture": "fannkuch.c",
+   "compiler": "tcc",
+   "run_ms": 495.46,
+   "compile_ms": 4.3,
+   "binary_bytes": 5546,
+   "run_spread": 0.0013,
+   "runs": 3
+  },
+  {
+   "fixture": "fannkuch.c",
+   "compiler": "ccc -O2",
+   "run_ms": 577.25,
+   "compile_ms": 24.9,
+   "binary_bytes": 14672,
+   "run_spread": 0.0033,
+   "runs": 3
+  },
+  {
+   "fixture": "fannkuch.c",
+   "compiler": "clang -O0",
+   "run_ms": 626.2,
+   "compile_ms": 66.1,
+   "binary_bytes": 16128,
+   "run_spread": 0.0053,
+   "runs": 3
+  },
+  {
+   "fixture": "fannkuch.c",
+   "compiler": "clang -O2",
+   "run_ms": 197.6,
+   "compile_ms": 117.2,
+   "binary_bytes": 16112,
+   "run_spread": 0.0001,
+   "runs": 3
+  },
+  {
+   "fixture": "fannkuch.c",
+   "compiler": "clang -O2 -march=x86-64-v3",
+   "run_ms": 200.47,
+   "compile_ms": 102.6,
+   "binary_bytes": 16112,
+   "run_spread": 0.0037,
+   "runs": 3
+  },
+  {
+   "fixture": "fannkuch.c",
+   "compiler": "gcc -O0",
+   "run_ms": 462.89,
+   "compile_ms": 40.7,
+   "binary_bytes": 16168,
+   "run_spread": 0.0013,
+   "runs": 3
+  },
+  {
+   "fixture": "fannkuch.c",
+   "compiler": "gcc -O2",
+   "run_ms": 220.07,
+   "compile_ms": 91.3,
+   "binary_bytes": 16216,
+   "run_spread": 0.0044,
+   "runs": 3
+  },
+  {
+   "fixture": "fannkuch.c",
+   "compiler": "gcc -O2 -march=x86-64-v3",
+   "run_ms": 219.76,
+   "compile_ms": 66.8,
+   "binary_bytes": 16216,
+   "run_spread": 0.0037,
+   "runs": 3
+  },
+  {
+   "fixture": "nqueens.c",
+   "compiler": "badc",
+   "run_ms": 375.04,
+   "compile_ms": 8.8,
+   "binary_bytes": 18784,
+   "run_spread": 0.0026,
+   "runs": 3
+  },
+  {
+   "fixture": "nqueens.c",
+   "compiler": "badc -O",
+   "run_ms": 214.37,
+   "compile_ms": 13.3,
+   "binary_bytes": 18664,
+   "run_spread": 0.0044,
+   "runs": 3
+  },
+  {
+   "fixture": "nqueens.c",
+   "compiler": "tcc",
+   "run_ms": 345.9,
+   "compile_ms": 4.2,
+   "binary_bytes": 5130,
+   "run_spread": 0.0011,
+   "runs": 3
+  },
+  {
+   "fixture": "nqueens.c",
+   "compiler": "ccc -O2",
+   "run_ms": 377.25,
+   "compile_ms": 23.6,
+   "binary_bytes": 14672,
+   "run_spread": 0.0028,
+   "runs": 3
+  },
+  {
+   "fixture": "nqueens.c",
+   "compiler": "clang -O0",
+   "run_ms": 468.35,
+   "compile_ms": 65.7,
+   "binary_bytes": 16160,
+   "run_spread": 0.0015,
+   "runs": 3
+  },
+  {
+   "fixture": "nqueens.c",
+   "compiler": "clang -O2",
+   "run_ms": 224.7,
+   "compile_ms": 76.9,
+   "binary_bytes": 16088,
+   "run_spread": 0.0117,
+   "runs": 3
+  },
+  {
+   "fixture": "nqueens.c",
+   "compiler": "clang -O2 -march=x86-64-v3",
+   "run_ms": 223.63,
+   "compile_ms": 78.1,
+   "binary_bytes": 16088,
+   "run_spread": 0.0042,
+   "runs": 3
+  },
+  {
+   "fixture": "nqueens.c",
+   "compiler": "gcc -O0",
+   "run_ms": 465.75,
+   "compile_ms": 40.0,
+   "binary_bytes": 16152,
+   "run_spread": 0.0003,
+   "runs": 3
+  },
+  {
+   "fixture": "nqueens.c",
+   "compiler": "gcc -O2",
+   "run_ms": 225.22,
+   "compile_ms": 56.6,
+   "binary_bytes": 16160,
+   "run_spread": 0.0132,
+   "runs": 3
+  },
+  {
+   "fixture": "nqueens.c",
+   "compiler": "gcc -O2 -march=x86-64-v3",
+   "run_ms": 229.26,
+   "compile_ms": 59.6,
+   "binary_bytes": 16160,
+   "run_spread": 0.0055,
+   "runs": 3
+  },
+  {
+   "fixture": "sudoku.c",
+   "compiler": "badc",
+   "run_ms": 455.29,
+   "compile_ms": 12.6,
+   "binary_bytes": 23272,
+   "run_spread": 0.007,
+   "runs": 3
+  },
+  {
+   "fixture": "sudoku.c",
+   "compiler": "badc -O",
+   "run_ms": 214.6,
+   "compile_ms": 26.5,
+   "binary_bytes": 23088,
+   "run_spread": 0.0028,
+   "runs": 3
+  },
+  {
+   "fixture": "sudoku.c",
+   "compiler": "tcc",
+   "run_ms": 503.55,
+   "compile_ms": 4.7,
+   "binary_bytes": 9138,
+   "run_spread": 0.0044,
+   "runs": 3
+  },
+  {
+   "fixture": "sudoku.c",
+   "compiler": "ccc -O2",
+   "run_ms": 839.66,
+   "compile_ms": 32.0,
+   "binary_bytes": 18888,
+   "run_spread": 0.0052,
+   "runs": 3
+  },
+  {
+   "fixture": "sudoku.c",
+   "compiler": "clang -O0",
+   "run_ms": 454.21,
+   "compile_ms": 69.6,
+   "binary_bytes": 16656,
+   "run_spread": 0.0021,
+   "runs": 3
+  },
+  {
+   "fixture": "sudoku.c",
+   "compiler": "clang -O2",
+   "run_ms": 231.58,
+   "compile_ms": 147.2,
+   "binary_bytes": 16520,
+   "run_spread": 0.0029,
+   "runs": 3
+  },
+  {
+   "fixture": "sudoku.c",
+   "compiler": "clang -O2 -march=x86-64-v3",
+   "run_ms": 217.14,
+   "compile_ms": 162.9,
+   "binary_bytes": 16464,
+   "run_spread": 0.0073,
+   "runs": 3
+  },
+  {
+   "fixture": "sudoku.c",
+   "compiler": "gcc -O0",
+   "run_ms": 446.23,
+   "compile_ms": 55.8,
+   "binary_bytes": 16664,
+   "run_spread": 0.0035,
+   "runs": 3
+  },
+  {
+   "fixture": "sudoku.c",
+   "compiler": "gcc -O2",
+   "run_ms": 240.19,
+   "compile_ms": 288.3,
+   "binary_bytes": 16448,
+   "run_spread": 0.0084,
+   "runs": 3
+  },
+  {
+   "fixture": "sudoku.c",
+   "compiler": "gcc -O2 -march=x86-64-v3",
+   "run_ms": 238.75,
+   "compile_ms": 119.8,
+   "binary_bytes": 16448,
+   "run_spread": 0.0035,
+   "runs": 3
+  },
+  {
+   "fixture": "binary_trees.c",
+   "compiler": "badc",
+   "run_ms": 460.55,
+   "compile_ms": 10.0,
+   "binary_bytes": 18920,
+   "run_spread": 0.0088,
+   "runs": 3
+  },
+  {
+   "fixture": "binary_trees.c",
+   "compiler": "badc -O",
+   "run_ms": 403.95,
+   "compile_ms": 13.2,
+   "binary_bytes": 18760,
+   "run_spread": 0.0036,
+   "runs": 3
+  },
+  {
+   "fixture": "binary_trees.c",
+   "compiler": "tcc",
+   "run_ms": 477.65,
+   "compile_ms": 5.0,
+   "binary_bytes": 5714,
+   "run_spread": 0.0087,
+   "runs": 3
+  },
+  {
+   "fixture": "binary_trees.c",
+   "compiler": "ccc -O2",
+   "run_ms": 473.09,
+   "compile_ms": 80.5,
+   "binary_bytes": 31080,
+   "run_spread": 0.0041,
+   "runs": 3
+  },
+  {
+   "fixture": "binary_trees.c",
+   "compiler": "clang -O0",
+   "run_ms": 476.47,
+   "compile_ms": 69.2,
+   "binary_bytes": 16384,
+   "run_spread": 0.0105,
+   "runs": 3
+  },
+  {
+   "fixture": "binary_trees.c",
+   "compiler": "clang -O2",
+   "run_ms": 416.01,
+   "compile_ms": 90.5,
+   "binary_bytes": 16360,
+   "run_spread": 0.0118,
+   "runs": 3
+  },
+  {
+   "fixture": "binary_trees.c",
+   "compiler": "clang -O2 -march=x86-64-v3",
+   "run_ms": 411.26,
+   "compile_ms": 90.3,
+   "binary_bytes": 16360,
+   "run_spread": 0.0079,
+   "runs": 3
+  },
+  {
+   "fixture": "binary_trees.c",
+   "compiler": "gcc -O0",
+   "run_ms": 479.66,
+   "compile_ms": 44.5,
+   "binary_bytes": 16392,
+   "run_spread": 0.0035,
+   "runs": 3
+  },
+  {
+   "fixture": "binary_trees.c",
+   "compiler": "gcc -O2",
+   "run_ms": 400.8,
+   "compile_ms": 120.9,
+   "binary_bytes": 20464,
+   "run_spread": 0.0171,
+   "runs": 3
+  },
+  {
+   "fixture": "binary_trees.c",
+   "compiler": "gcc -O2 -march=x86-64-v3",
+   "run_ms": 397.39,
+   "compile_ms": 121.7,
+   "binary_bytes": 20464,
+   "run_spread": 0.0054,
+   "runs": 3
+  },
+  {
+   "fixture": "crypto.c",
+   "compiler": "badc",
+   "run_ms": 2689.07,
+   "compile_ms": 26.6,
+   "binary_bytes": 42248,
+   "run_spread": 0.001,
+   "runs": 3
+  },
+  {
+   "fixture": "crypto.c",
+   "compiler": "badc -O",
+   "run_ms": 173.16,
+   "compile_ms": 110.1,
+   "binary_bytes": 45440,
+   "run_spread": 0.0027,
+   "runs": 3
+  },
+  {
+   "fixture": "crypto.c",
+   "compiler": "tcc",
+   "run_ms": 2796.06,
+   "compile_ms": 5.4,
+   "binary_bytes": 29130,
+   "run_spread": 0.0075,
+   "runs": 3
+  },
+  {
+   "fixture": "crypto.c",
+   "compiler": "ccc -O2",
+   "run_ms": 2581.78,
+   "compile_ms": 68.8,
+   "binary_bytes": 43344,
+   "run_spread": 0.0004,
+   "runs": 3
+  },
+  {
+   "fixture": "crypto.c",
+   "compiler": "clang -O0",
+   "run_ms": 2625.4,
+   "compile_ms": 90.6,
+   "binary_bytes": 35512,
+   "run_spread": 0.0033,
+   "runs": 3
+  },
+  {
+   "fixture": "crypto.c",
+   "compiler": "clang -O2",
+   "run_ms": 179.25,
+   "compile_ms": 597.4,
+   "binary_bytes": 55136,
+   "run_spread": 0.0201,
+   "runs": 3
+  },
+  {
+   "fixture": "crypto.c",
+   "compiler": "clang -O2 -march=x86-64-v3",
+   "run_ms": 163.68,
+   "compile_ms": 517.4,
+   "binary_bytes": 51040,
+   "run_spread": 0.0036,
+   "runs": 3
+  },
+  {
+   "fixture": "crypto.c",
+   "compiler": "gcc -O0",
+   "run_ms": 2334.41,
+   "compile_ms": 114.7,
+   "binary_bytes": 39608,
+   "run_spread": 0.0041,
+   "runs": 3
+  },
+  {
+   "fixture": "crypto.c",
+   "compiler": "gcc -O2",
+   "run_ms": 517.01,
+   "compile_ms": 629.0,
+   "binary_bytes": 38920,
+   "run_spread": 0.0038,
+   "runs": 3
+  },
+  {
+   "fixture": "crypto.c",
+   "compiler": "gcc -O2 -march=x86-64-v3",
+   "run_ms": 514.84,
+   "compile_ms": 465.5,
+   "binary_bytes": 38920,
+   "run_spread": 0.0046,
+   "runs": 3
+  },
+  {
+   "fixture": "blake2b.c",
+   "compiler": "badc",
+   "run_ms": 3715.88,
+   "compile_ms": 53.7,
+   "binary_bytes": 27224,
+   "run_spread": 0.0007,
+   "runs": 3
+  },
+  {
+   "fixture": "blake2b.c",
+   "compiler": "badc -O",
+   "run_ms": 266.65,
+   "compile_ms": 92.3,
+   "binary_bytes": 22952,
+   "run_spread": 0.0004,
+   "runs": 3
+  },
+  {
+   "fixture": "blake2b.c",
+   "compiler": "clang -O0",
+   "run_ms": 7198.08,
+   "compile_ms": 1918.3,
+   "binary_bytes": 28792,
+   "run_spread": 0.0028,
+   "runs": 3
+  },
+  {
+   "fixture": "blake2b.c",
+   "compiler": "clang -O2",
+   "run_ms": 259.91,
+   "compile_ms": 499.1,
+   "binary_bytes": 16352,
+   "run_spread": 0.0006,
+   "runs": 3
+  },
+  {
+   "fixture": "blake2b.c",
+   "compiler": "clang -O2 -march=x86-64-v3",
+   "run_ms": 247.99,
+   "compile_ms": 503.9,
+   "binary_bytes": 16304,
+   "run_spread": 0.0014,
+   "runs": 3
+  },
+  {
+   "fixture": "blake2b.c",
+   "compiler": "gcc -O0",
+   "run_ms": 3215.3,
+   "compile_ms": 881.1,
+   "binary_bytes": 24664,
+   "run_spread": 0.0045,
+   "runs": 3
+  },
+  {
+   "fixture": "blake2b.c",
+   "compiler": "gcc -O2",
+   "run_ms": 272.62,
+   "compile_ms": 463.7,
+   "binary_bytes": 16400,
+   "run_spread": 0.0029,
+   "runs": 3
+  },
+  {
+   "fixture": "blake2b.c",
+   "compiler": "gcc -O2 -march=x86-64-v3",
+   "run_ms": 273.34,
+   "compile_ms": 460.9,
+   "binary_bytes": 16400,
+   "run_spread": 0.0004,
+   "runs": 3
+  },
+  {
+   "fixture": "adler32.c",
+   "compiler": "badc",
+   "run_ms": 970.83,
+   "compile_ms": 48.5,
+   "binary_bytes": 18896,
+   "run_spread": 0.016,
+   "runs": 3
+  },
+  {
+   "fixture": "adler32.c",
+   "compiler": "badc -O",
+   "run_ms": 138.71,
+   "compile_ms": 59.2,
+   "binary_bytes": 18664,
+   "run_spread": 0.0041,
+   "runs": 3
+  },
+  {
+   "fixture": "adler32.c",
+   "compiler": "clang -O0",
+   "run_ms": 5222.2,
+   "compile_ms": 444.3,
+   "binary_bytes": 20320,
+   "run_spread": 0.0007,
+   "runs": 3
+  },
+  {
+   "fixture": "adler32.c",
+   "compiler": "clang -O2",
+   "run_ms": 44.21,
+   "compile_ms": 468.3,
+   "binary_bytes": 16176,
+   "run_spread": 0.0032,
+   "runs": 3
+  },
+  {
+   "fixture": "adler32.c",
+   "compiler": "clang -O2 -march=x86-64-v3",
+   "run_ms": 44.37,
+   "compile_ms": 498.1,
+   "binary_bytes": 16136,
+   "run_spread": 0.0059,
+   "runs": 3
+  },
+  {
+   "fixture": "adler32.c",
+   "compiler": "gcc -O0",
+   "run_ms": 598.44,
+   "compile_ms": 337.3,
+   "binary_bytes": 20360,
+   "run_spread": 0.0265,
+   "runs": 3
+  },
+  {
+   "fixture": "adler32.c",
+   "compiler": "gcc -O2",
+   "run_ms": 45.7,
+   "compile_ms": 428.8,
+   "binary_bytes": 16200,
+   "run_spread": 0.0042,
+   "runs": 3
+  },
+  {
+   "fixture": "adler32.c",
+   "compiler": "gcc -O2 -march=x86-64-v3",
+   "run_ms": 45.75,
+   "compile_ms": 427.1,
+   "binary_bytes": 16200,
+   "run_spread": 0.0042,
+   "runs": 3
+  },
+  {
+   "fixture": "crc32.c",
+   "compiler": "badc",
+   "run_ms": 706.53,
+   "compile_ms": 49.5,
+   "binary_bytes": 23120,
+   "run_spread": 0.0019,
+   "runs": 3
+  },
+  {
+   "fixture": "crc32.c",
+   "compiler": "badc -O",
+   "run_ms": 167.58,
+   "compile_ms": 59.6,
+   "binary_bytes": 18776,
+   "run_spread": 0.0009,
+   "runs": 3
+  },
+  {
+   "fixture": "crc32.c",
+   "compiler": "clang -O0",
+   "run_ms": 484.54,
+   "compile_ms": 434.3,
+   "binary_bytes": 16392,
+   "run_spread": 0.0008,
+   "runs": 3
+  },
+  {
+   "fixture": "crc32.c",
+   "compiler": "clang -O2",
+   "run_ms": 167.68,
+   "compile_ms": 471.7,
+   "binary_bytes": 16192,
+   "run_spread": 0.0023,
+   "runs": 3
+  },
+  {
+   "fixture": "crc32.c",
+   "compiler": "clang -O2 -march=x86-64-v3",
+   "run_ms": 167.64,
+   "compile_ms": 476.0,
+   "binary_bytes": 16192,
+   "run_spread": 0.0045,
+   "runs": 3
+  },
+  {
+   "fixture": "crc32.c",
+   "compiler": "gcc -O0",
+   "run_ms": 487.24,
+   "compile_ms": 337.9,
+   "binary_bytes": 16432,
+   "run_spread": 0.0052,
+   "runs": 3
+  },
+  {
+   "fixture": "crc32.c",
+   "compiler": "gcc -O2",
+   "run_ms": 167.5,
+   "compile_ms": 429.5,
+   "binary_bytes": 16224,
+   "run_spread": 0.0007,
+   "runs": 3
+  },
+  {
+   "fixture": "crc32.c",
+   "compiler": "gcc -O2 -march=x86-64-v3",
+   "run_ms": 167.48,
+   "compile_ms": 429.0,
+   "binary_bytes": 16224,
+   "run_spread": 0.0026,
+   "runs": 3
+  },
+  {
+   "fixture": "compress.c",
+   "compiler": "badc",
+   "run_ms": 830.9,
+   "compile_ms": 67.5,
+   "binary_bytes": 75816,
+   "run_spread": 0.0167,
+   "runs": 3
+  },
+  {
+   "fixture": "compress.c",
+   "compiler": "badc -O",
+   "run_ms": 317.9,
+   "compile_ms": 451.2,
+   "binary_bytes": 58896,
+   "run_spread": 0.0086,
+   "runs": 3
+  },
+  {
+   "fixture": "compress.c",
+   "compiler": "tcc",
+   "run_ms": 1049.85,
+   "compile_ms": 9.4,
+   "binary_bytes": 66778,
+   "run_spread": 0.0043,
+   "runs": 3
+  },
+  {
+   "fixture": "compress.c",
+   "compiler": "ccc -O2",
+   "run_ms": 1753.37,
+   "compile_ms": 262.3,
+   "binary_bytes": 260656,
+   "run_spread": 0.0442,
+   "runs": 9
+  },
+  {
+   "fixture": "compress.c",
+   "compiler": "clang -O0",
+   "run_ms": 1051.84,
+   "compile_ms": 135.4,
+   "binary_bytes": 69360,
+   "run_spread": 0.003,
+   "runs": 3
+  },
+  {
+   "fixture": "compress.c",
+   "compiler": "clang -O2",
+   "run_ms": 289.27,
+   "compile_ms": 741.5,
+   "binary_bytes": 52384,
+   "run_spread": 0.0029,
+   "runs": 3
+  },
+  {
+   "fixture": "compress.c",
+   "compiler": "clang -O2 -march=x86-64-v3",
+   "run_ms": 308.4,
+   "compile_ms": 768.2,
+   "binary_bytes": 56480,
+   "run_spread": 0.003,
+   "runs": 3
+  },
+  {
+   "fixture": "compress.c",
+   "compiler": "gcc -O0",
+   "run_ms": 980.75,
+   "compile_ms": 184.7,
+   "binary_bytes": 69536,
+   "run_spread": 0.0171,
+   "runs": 3
+  },
+  {
+   "fixture": "compress.c",
+   "compiler": "gcc -O2",
+   "run_ms": 297.12,
+   "compile_ms": 973.4,
+   "binary_bytes": 52280,
+   "run_spread": 0.012,
+   "runs": 3
+  },
+  {
+   "fixture": "compress.c",
+   "compiler": "gcc -O2 -march=x86-64-v3",
+   "run_ms": 296.17,
+   "compile_ms": 977.5,
+   "binary_bytes": 52280,
+   "run_spread": 0.0112,
+   "runs": 3
+  },
+  {
+   "fixture": "stb.c",
+   "compiler": "badc",
+   "run_ms": 255.99,
+   "compile_ms": 14.4,
+   "binary_bytes": 23408,
+   "run_spread": 0.0337,
+   "runs": 9
+  },
+  {
+   "fixture": "stb.c",
+   "compiler": "badc -O",
+   "run_ms": 47.5,
+   "compile_ms": 22.6,
+   "binary_bytes": 23160,
+   "run_spread": 0.0015,
+   "runs": 3
+  },
+  {
+   "fixture": "stb.c",
+   "compiler": "tcc",
+   "run_ms": 267.5,
+   "compile_ms": 6.6,
+   "binary_bytes": 11426,
+   "run_spread": 0.0028,
+   "runs": 3
+  },
+  {
+   "fixture": "stb.c",
+   "compiler": "ccc -O2",
+   "run_ms": 634.64,
+   "compile_ms": 44.1,
+   "binary_bytes": 24080,
+   "run_spread": 0.0041,
+   "runs": 3
+  },
+  {
+   "fixture": "stb.c",
+   "compiler": "clang -O0",
+   "run_ms": 243.97,
+   "compile_ms": 80.5,
+   "binary_bytes": 22016,
+   "run_spread": 0.0005,
+   "runs": 3
+  },
+  {
+   "fixture": "stb.c",
+   "compiler": "clang -O2",
+   "run_ms": 55.08,
+   "compile_ms": 113.6,
+   "binary_bytes": 16544,
+   "run_spread": 0.004,
+   "runs": 3
+  },
+  {
+   "fixture": "stb.c",
+   "compiler": "clang -O2 -march=x86-64-v3",
+   "run_ms": 47.05,
+   "compile_ms": 111.5,
+   "binary_bytes": 16544,
+   "run_spread": 0.0006,
+   "runs": 3
+  },
+  {
+   "fixture": "stb.c",
+   "compiler": "gcc -O0",
+   "run_ms": 256.89,
+   "compile_ms": 62.3,
+   "binary_bytes": 22016,
+   "run_spread": 0.0755,
+   "runs": 9
+  },
+  {
+   "fixture": "stb.c",
+   "compiler": "gcc -O2",
+   "run_ms": 41.78,
+   "compile_ms": 121.4,
+   "binary_bytes": 16768,
+   "run_spread": 0.006,
+   "runs": 3
+  },
+  {
+   "fixture": "stb.c",
+   "compiler": "gcc -O2 -march=x86-64-v3",
+   "run_ms": 41.75,
+   "compile_ms": 111.4,
+   "binary_bytes": 16768,
+   "run_spread": 0.0031,
+   "runs": 3
+  },
+  {
+   "fixture": "sqlite.c",
+   "compiler": "badc",
+   "run_ms": 30.74,
+   "compile_ms": 1501.3,
+   "binary_bytes": 1485296,
+   "run_spread": 0.0098,
+   "runs": 3
+  },
+  {
+   "fixture": "sqlite.c",
+   "compiler": "badc -O",
+   "run_ms": 10.83,
+   "compile_ms": 8198.2,
+   "binary_bytes": 1384760,
+   "run_spread": 0.1246,
+   "runs": 9
+  },
+  {
+   "fixture": "sqlite.c",
+   "compiler": "tcc",
+   "run_ms": 31.21,
+   "compile_ms": 215.0,
+   "binary_bytes": 1409170,
+   "run_spread": 0.0106,
+   "runs": 3
+  },
+  {
+   "fixture": "sqlite.c",
+   "compiler": "ccc -O2",
+   "run_ms": 114.21,
+   "compile_ms": 10004.5,
+   "binary_bytes": 3263248,
+   "run_spread": 0.0031,
+   "runs": 3
+  },
+  {
+   "fixture": "sqlite.c",
+   "compiler": "clang -O0",
+   "run_ms": 32.67,
+   "compile_ms": 1935.4,
+   "binary_bytes": 1252616,
+   "run_spread": 0.062,
+   "runs": 9
+  },
+  {
+   "fixture": "sqlite.c",
+   "compiler": "clang -O2",
+   "run_ms": 9.63,
+   "compile_ms": 20679.3,
+   "binary_bytes": 1280328,
+   "run_spread": 0.0239,
+   "runs": 3
+  },
+  {
+   "fixture": "sqlite.c",
+   "compiler": "clang -O2 -march=x86-64-v3",
+   "run_ms": 9.26,
+   "compile_ms": 21478.4,
+   "binary_bytes": 1325384,
+   "run_spread": 0.0153,
+   "runs": 3
+  },
+  {
+   "fixture": "sqlite.c",
+   "compiler": "gcc -O0",
+   "run_ms": 47.37,
+   "compile_ms": 3846.3,
+   "binary_bytes": 1365616,
+   "run_spread": 0.0142,
+   "runs": 3
+  },
+  {
+   "fixture": "sqlite.c",
+   "compiler": "gcc -O2",
+   "run_ms": 9.26,
+   "compile_ms": 25635.9,
+   "binary_bytes": 1204768,
+   "run_spread": 0.0087,
+   "runs": 3
+  },
+  {
+   "fixture": "sqlite.c",
+   "compiler": "gcc -O2 -march=x86-64-v3",
+   "run_ms": 9.13,
+   "compile_ms": 25282.8,
+   "binary_bytes": 1204768,
+   "run_spread": 0.0044,
+   "runs": 3
+  },
+  {
+   "fixture": "sqlite_bench.c",
+   "compiler": "badc",
+   "run_ms": 1092.19,
+   "compile_ms": 1482.5,
+   "binary_bytes": 1489496,
+   "run_spread": 0.0104,
+   "runs": 3
+  },
+  {
+   "fixture": "sqlite_bench.c",
+   "compiler": "badc -O",
+   "run_ms": 410.87,
+   "compile_ms": 8229.4,
+   "binary_bytes": 1388928,
+   "run_spread": 0.0082,
+   "runs": 3
+  },
+  {
+   "fixture": "sqlite_bench.c",
+   "compiler": "tcc",
+   "run_ms": 1091.88,
+   "compile_ms": 91.5,
+   "binary_bytes": 1411668,
+   "run_spread": 0.002,
+   "runs": 3
+  },
+  {
+   "fixture": "sqlite_bench.c",
+   "compiler": "ccc -O2",
+   "run_ms": 4609.67,
+   "compile_ms": 10030.0,
+   "binary_bytes": 3267368,
+   "run_spread": 0.0006,
+   "runs": 3
+  },
+  {
+   "fixture": "sqlite_bench.c",
+   "compiler": "clang -O0",
+   "run_ms": 1183.52,
+   "compile_ms": 1752.1,
+   "binary_bytes": 1252768,
+   "run_spread": 0.0201,
+   "runs": 3
+  },
+  {
+   "fixture": "sqlite_bench.c",
+   "compiler": "clang -O2",
+   "run_ms": 374.78,
+   "compile_ms": 20986.3,
+   "binary_bytes": 1284480,
+   "run_spread": 0.0006,
+   "runs": 3
+  },
+  {
+   "fixture": "sqlite_bench.c",
+   "compiler": "clang -O2 -march=x86-64-v3",
+   "run_ms": 371.33,
+   "compile_ms": 21560.2,
+   "binary_bytes": 1329536,
+   "run_spread": 0.0033,
+   "runs": 3
+  },
+  {
+   "fixture": "sqlite_bench.c",
+   "compiler": "gcc -O0",
+   "run_ms": 1564.72,
+   "compile_ms": 3856.4,
+   "binary_bytes": 1365752,
+   "run_spread": 0.0043,
+   "runs": 3
+  },
+  {
+   "fixture": "sqlite_bench.c",
+   "compiler": "gcc -O2",
+   "run_ms": 379.93,
+   "compile_ms": 25386.4,
+   "binary_bytes": 1204904,
+   "run_spread": 0.005,
+   "runs": 3
+  },
+  {
+   "fixture": "sqlite_bench.c",
+   "compiler": "gcc -O2 -march=x86-64-v3",
+   "run_ms": 376.99,
+   "compile_ms": 25072.9,
+   "binary_bytes": 1204904,
+   "run_spread": 0.0095,
+   "runs": 3
+  },
+  {
+   "fixture": "quickjs_bench.c",
+   "compiler": "badc",
+   "run_ms": 500.46,
+   "compile_ms": 1225.8,
+   "binary_bytes": 1469904,
+   "run_spread": 0.0401,
+   "runs": 9
+  },
+  {
+   "fixture": "quickjs_bench.c",
+   "compiler": "badc -O",
+   "run_ms": 99.44,
+   "compile_ms": 5928.2,
+   "binary_bytes": 1257104,
+   "run_spread": 0.0074,
+   "runs": 3
+  },
+  {
+   "fixture": "quickjs_bench.c",
+   "compiler": "ccc -O2",
+   "run_ms": 1844.21,
+   "compile_ms": 8680.0,
+   "binary_bytes": 3060336,
+   "run_spread": 0.008,
+   "runs": 3
+  },
+  {
+   "fixture": "quickjs_bench.c",
+   "compiler": "clang -O0",
+   "run_ms": 432.01,
+   "compile_ms": 2173.0,
+   "binary_bytes": 1300896,
+   "run_spread": 0.0014,
+   "runs": 3
+  },
+  {
+   "fixture": "quickjs_bench.c",
+   "compiler": "clang -O2",
+   "run_ms": 84.7,
+   "compile_ms": 19422.6,
+   "binary_bytes": 1166720,
+   "run_spread": 0.0102,
+   "runs": 3
+  },
+  {
+   "fixture": "quickjs_bench.c",
+   "compiler": "clang -O2 -march=x86-64-v3",
+   "run_ms": 84.77,
+   "compile_ms": 19779.3,
+   "binary_bytes": 1187136,
+   "run_spread": 0.0133,
+   "runs": 3
+  },
+  {
+   "fixture": "quickjs_bench.c",
+   "compiler": "gcc -O0",
+   "run_ms": 405.98,
+   "compile_ms": 3560.2,
+   "binary_bytes": 1333488,
+   "run_spread": 0.0073,
+   "runs": 3
+  },
+  {
+   "fixture": "quickjs_bench.c",
+   "compiler": "gcc -O2",
+   "run_ms": 99.32,
+   "compile_ms": 22011.0,
+   "binary_bytes": 1144288,
+   "run_spread": 0.0191,
+   "runs": 3
+  },
+  {
+   "fixture": "quickjs_bench.c",
+   "compiler": "gcc -O2 -march=x86-64-v3",
+   "run_ms": 100.29,
+   "compile_ms": 22084.3,
+   "binary_bytes": 1144288,
+   "run_spread": 0.0204,
+   "runs": 3
+  }
+ ],
+ "provenance": {
+  "source": "measured",
+  "run_id": "45976463294",
+  "url": "https://github.com/kromych/badc/actions/runs/45976463294"
+ },
+ "benches": [
+  {
+   "suite": "cpython",
+   "name": "microbench",
+   "compiler": "badc",
+   "run_ms": 3967.968
+  },
+  {
+   "suite": "cpython",
+   "name": "microbench",
+   "compiler": "badc -O",
+   "run_ms": 236.568
+  },
+  {
+   "suite": "cpython",
+   "name": "microbench",
+   "compiler": "clang -O0",
+   "run_ms": 4099.424
+  },
+  {
+   "suite": "cpython",
+   "name": "microbench",
+   "compiler": "clang -O2",
+   "run_ms": 204.437
+  }
+ ]
+}
