@@ -125,6 +125,23 @@
    "source": "measured"
   },
   {
+   "sha": "3a382f71273cb34704bb9ea69979a0d5dcbf8e69",
+   "branch": "master",
+   "runner": "windows-latest",
+   "taken": "2026-11-28T04:50:54Z",
+   "machine": {
+    "system": "Windows",
+    "release": "2025Server",
+    "arch": "AMD64",
+    "cpu": "AMD EPYC 9V74 80-Core Processor",
+    "runner": "windows-latest",
+    "clock": "not held: the runs are not pinned to a CPU whose governor this host exposes"
+   },
+   "path": "runs/3a/38/3a382f71273cb34704bb9ea69979a0d5dcbf8e69/windows-latest.json",
+   "run_id": "46104686163",
+   "source": "measured"
+  },
+  {
    "sha": "4810b0a50b213e3b3744546f0a7262d8e548722d",
    "branch": "master",
    "runner": "ubuntu-latest",
